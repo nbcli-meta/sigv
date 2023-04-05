@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+: <<'END_OF_DOCS'
+
+=head1 NAME
+
+ -
+
+=head1 SYNOPSIS
+
+
+
+=head1 OPTIONS
+
+=head1 DESCRIPTION
+
+
+
+=head1 EXAMPLES
+
+
+
+=head1 NOTES
+
+
+
+=head1 LICENSE AND COPYRIGHT
+
+MIT License
+
+Copyright (c) 2022 Marcus A. Gordon
+
+=cut
+END_OF_DOCS

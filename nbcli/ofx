@@ -1,0 +1,8 @@
+#!/bin/bash
+
+proj=$(echo "${1} Debug")
+proj2=$(echo "${1}Debug")
+
+rm bin/stdin.log bin/stdout.log bin/stderr.log
+xcodebuild -scheme "${proj}" build && open bin/$proj2.app -i bin/stdin.log -o bin/stdout.log --stderr bin/stderr.log
+

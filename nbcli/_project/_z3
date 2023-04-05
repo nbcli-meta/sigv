@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for i in [ 0..5 ]
+do
+  trans=$[ $RANDOM % 3000 + 750 ]
+  sendosc 127.0.0.1 4444 /sigv s "geo ^ `jot -p 4 -r 1 0 1` ${trans}"
+  # trans2=$[ $trans / 1000 ]
+  sleep $1
+done
+

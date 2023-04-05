@@ -1,0 +1,18 @@
+#!/bin/bash
+
+sendmidi dev m ch 4 on 60 64
+sleep 1
+sendmidi dev m ch 4 off 60 64 
+sleep 4
+sendmidi dev m ch 4 on 61 64 
+sleep 1
+sendmidi dev m ch 4 off  61 64
+sleep 4
+sendmidi dev m ch 4 on 60 64 
+sleep 1
+sendmidi dev m ch 4 off 60 64
+sleep 4
+sendmidi dev m ch 4 on 61 64 
+sleep 1
+sendmidi dev m ch 4 off 61 64 
+sleep 4

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo $1 > $NBCLI/tmp/crowt.lua && druid upload $NBCLI/tmp/crowt.lua

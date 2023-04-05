@@ -1,0 +1,15 @@
+#!/bin/bash
+ 
+s js osci
+s geo anim turn 0 12 -1
+sleep 2
+s geo anim scaleto 5 5 5 10
+sleep 10
+morph geo 200 5
+sleep 5
+morph geo 50 2
+sleep 2
+s geo anim turn 0 7 0
+sleep 2
+echo done
+

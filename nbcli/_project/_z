@@ -1,0 +1,4 @@
+for i in {64..58}
+do
+  sendosc 127.0.0.1 4444 /sigv s "geo ^ `jot -p 4 -r 1 0 1` 1000"
+done

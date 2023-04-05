@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+# sigv cli: ch
+
+: <<'END_OF_DOCS'
+
+=head1 CH
+
+sigv CLI element for sending a MIDI message. Takes 4 parameters: 
+[channel] [pitch] [velocity] [duration] [other]
+
+Uses sendmidi library. Typical values for [other] include pc (program change), start, stop, pb (pitch bend), etc.
+
+=head SADF 
+
+=head2 EXAMPLES
+
+	ch 4 60 64 1  # play midi note 60 on channel 4 for one second
+
+=head3 NOTES
+
+	ch was the chosen element name for MIDI sending as the system instruments are primarily identified ny their channel.
+
+[...]
+
+=head1 SEND MIDI TO CHANNEL
+=cut
+END_OF_DOCS

@@ -1,0 +1,222 @@
+#!/bin/bash
+
+## Orca cli
+function cli() {
+  $HOME/orca/build/debug/cli
+}
+
+## Orca modules path
+omods=$HOME/orca-modules/modules
+
+## sigv comps path
+NBCLI=$HOME/sigv/nbcli
+
+## 3D directory
+models=$HOME/_studio/material/3d
+
+## Sound clip directory
+snd=$HOME/_studio/material/sound-clips
+
+## Image directories
+vids=$HOME/_studio/material/vids
+archive=$HOME/_studio/material/archive
+arboreal=$HOME/_studio/material/arboreal
+cine=$HOME/_studio/material/cine
+generic=$HOME/_studio/material/generic
+pbr=$HOME/_studio/material/pbr
+brazil=$HOME/_studio/material/brazil
+
+## Rain (Daisy based granular synth WIP)
+rain="$HOME/PhD/Dissertation Research/PHASE II/[ M ] Rain"
+oopsys="$HOME/Documents/Max 8/Packages/oopsy/source" ## Daisy oopsy source folder
+
+## SuperCollider
+alias sc='open -a "/Applications/SuperCollider.app"'
+
+## SuperCollider msyn
+msyn='/Users/magfoto/sigv/nbcli/synth/msyn.scd'
+
+## SuperCollider Server
+alias scsynth=/Applications/SuperCollider.app/Contents/Resources/scsynth
+
+## sclang
+alias sclang=/Applications/SuperCollider.app/Contents/MacOS/sclang
+
+## hydra test
+function o() {
+  s -h "$@"
+}
+
+function h() { $HOME/sigv/nbcli/max/h "$@" }
+
+## Reset sigv.js
+function rst() { $HOME/sigv/nbcli/max/rst "$@" }
+
+## sigv.js messengers
+function js() { $HOME/sigv/nbcli/max/js "$@" }
+function aio() { $HOME/sigv/nbcli/max/aio "$@" }
+function asl() { $HOME/sigv/nbcli/max/asl "$@" }
+function bfg() { $HOME/sigv/nbcli/max/bfg "$@" }
+function burke-shaw() { $HOME/sigv/nbcli/max/burke-shaw "$@" }
+function chen-celikovsky() { $HOME/sigv/nbcli/max/chen-celikovsky "$@" }
+function clifford() { $HOME/sigv/nbcli/max/clifford "$@" }
+function cv() { $HOME/sigv/nbcli/max/cv "$@" }
+function fpic() { $HOME/sigv/nbcli/max/fpic "$@" }
+function geo() { $HOME/sigv/nbcli/max/geo "$@" }
+function grain() { $HOME/sigv/nbcli/max/grain "$@" }
+function graph() { $HOME/sigv/nbcli/max/graph "$@" }
+function lfo() { $HOME/sigv/nbcli/max/lfo "$@" }
+function light() { $HOME/sigv/nbcli/max/light "$@" }
+function lorenz() { $HOME/sigv/nbcli/max/lorenz "$@" }
+function lttp() { $HOME/sigv/nbcli/max/lttp "$@" }
+function markov() { $HOME/sigv/nbcli/max/markov "$@" }
+function midi() { $HOME/sigv/nbcli/max/midi "$@" }
+function model() { $HOME/sigv/nbcli/max/model "$@" }
+function morph() { $HOME/sigv/nbcli/max/morph "$@" }
+function morph0() { $HOME/sigv/nbcli/max/morph0 "$@" }
+function morph0() { $HOME/sigv/nbcli/max/morph0 "$@" }
+function morpha() { $HOME/sigv/nbcli/max/morpha "$@" }
+function nurbs() { $HOME/sigv/nbcli/max/nurbs "$@" }
+# function orca() { s orca "$@" }
+function plato() { $HOME/sigv/nbcli/max/plato "$@" }
+function proc() { $HOME/sigv/nbcli/max/proc "$@" }
+function rossler() { $HOME/sigv/nbcli/max/rossler "$@" }
+function sketch() { $HOME/sigv/nbcli/max/sketch "$@" }
+function sky() { $HOME/sigv/nbcli/max/sky "$@" }
+function som() { $HOME/sigv/nbcli/max/som "$@" }
+function specs() { $HOME/sigv/nbcli/max/specs "$@" }
+function synth() { $HOME/sigv/nbcli/max/synth "$@" }
+function terra() { $HOME/sigv/nbcli/max/terra "$@" }
+function ~() { $HOME/sigv/nbcli/max/~ "$@" }
+function wave() { $HOME/sigv/nbcli/max/wave "$@" }
+
+
+## sigv cli
+function sigv() {
+  if [[ "$1" == "--config" ]]
+  then
+    nano $NBCLI/.sigvsh
+  elif [[ "$1" == "-b" ]]
+  then
+    cd $HOME/sigv/nbcli && ls
+  elif [[ "$1" == "--examples" ]]
+  then
+    cat $HOME/sigv/nbcli/_examples
+  elif [[ "$1" == "-m" ]]
+  then
+    cp $HOME/sigv/nbcli/man/_template  $HOME/sigv/nbcli/man/"$2"
+   elif [[ "$1" == "--mpub" ]]
+  then
+    cd $HOME/sigv/nbcli/man && pod2man "$2" > "$2".1 && pod2html "$2" > "$2".html && cp "$2".1 /usr/local/share/man/man1/"$2".1 && gzip /usr/local/share/man/man1/"$2".1
+    cp "$2".1 /usr/local/share/man/man1/"$2".1
+    gzip /usr/local/share/man/man1/"$2".1
+    reload
+    man "$2"
+  elif [[ "$1" == "-j" ]]
+  then
+    echo "Launching sigv.js..."
+    open $HOME/sigv.js/sigv-js-main/patchers/sigv-js-main.maxpat
+  else
+    echo "Launching sigv2..."
+    open "$HOME/sigv/elements/_core.maxpat"
+    cd $NBCLI
+    echo "Options: sigv -j [(default) launch sigv.js] -b [set directory to nbcli] --examples [display example code] -m [create new man page] --config [open sigv shell configuration]"
+    echo " "
+    echo "sigv: a mini-language for transmodal live coding"
+    echo "https://sigv.xyz/"
+  fi
+}
+
+function help() {
+  $HOME/sigv/nbcli/help "$@"
+}
+
+## Utilities
+### Clear history buffer
+function clearbuff() {
+  clear && fc -p
+}
+
+### Scan/Read a file
+function scan() {
+  $HOME/sigv/nbcli/scan "$@"
+}
+
+### Window Title
+function window() {
+  echo -n -e "\033]0;$1\007"
+}
+
+### Random Password Generator
+function rpg() {
+  date | md5 | head -c $1 | pbcopy ; echo
+  echo "copied to clipboard..."
+}
+
+### QR code utils
+function qr() {
+  if [[ "$1" == "-r" ]]
+  then
+    zbarimg $2
+  else
+    qrencode $1 -o $2
+  fi
+}
+
+### History of commands
+function histo() {
+  history | cut -c 8-
+}
+
+## Systems Elements
+
+function s() { $HOME/sigv/nbcli/max/s "$*" }
+function zap() { s sys script delete "$*" }
+function o() { $HOME/sigv/nbcli/o "$@" }
+function smidi() { sendmidi "$@" }
+function rmidi() { receivemidi "$@" }
+
+# mqtt : mqtt.js console implementation (mqtt help for more info)
+
+function shiftr() { $HOME/sigv/nbcli/shiftr "$*" }
+
+## Core Elements (sigv)
+
+function lux() { $HOME/sigv/nbcli/lux "$@" } #TBD
+function automata() { $HOME/sigv/nbcli/automata "$*" & }
+function bbn() { $HOME/sigv/nbcli/bbn "$@" } #TBD
+function serial() { $HOME/sigv/nbcli/serial "$@" } #TBD
+function clock() { $HOME/sigv/nbcli/clock "$@" } #TBD
+function timer() { $HOME/sigv/nbcli/timer "$@" }
+function pattern() { $HOME/sigv/nbcli/pattern "$@" & } #TBD
+function iter() { $HOME/sigv/nbcli/iter "$@" & }
+function random() { $HOME/sigv/nbcli/random "$@" }
+function rand() { $HOME/sigv/nbcli/rand "$@" }
+function rand2() { $HOME/sigv/nbcli/rand2 "$@" }
+function count() { $HOME/sigv/nbcli/count "$@" }
+function gen() { $HOME/sigv/nbcli/gen "$@" & }
+function ch() { $HOME/sigv/nbcli/ch "$@" }
+function mod() { $HOME/sigv/nbcli/mod "$@" }
+function usb() { $HOME/sigv/nbcli/usb "$@" }
+function opz() { $HOME/sigv/nbcli/opz "$*" }
+function rnr() { $HOME/sigv/nbcli/rnr "$@" }
+function rsr() { $HOME/sigv/nbcli/rsr "$@" }
+function ipad() { $HOME/sigv/nbcli/ipad "$@" }
+function oiio() { oiiotool "$*" }
+function crow() { $HOME/sigv/nbcli/crow "$@" }
+function ice() { $HOME/sigv/nbcli/ice "$@" }
+function new() { $HOME/sigv/nbcli/new "$@" }
+function spk() { $HOME/sigv/nbcli/spk "$@" }
+
+function qrec() {
+  if [[ "$1" == "-s" ]]
+  then
+  osascript -e 'tell application "QuickTime Player" to activate' -e 'tell application "QuickTime Player" to start (new screen recording)'
+  else
+  osascript -e 'tell application "QuickTime Player" to activate' -e 'tell application "QuickTime Player" to start (new audio recording)'
+  fi
+}
+
+export PATH=$PATH:$HOME/sigv/nbcli:$HOME/sigv/nbcli/max
+
+source ~/.bashrc

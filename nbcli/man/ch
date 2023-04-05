@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+: <<'END_OF_DOCS'
+
+=head1 NAME
+
+ch - sending a MIDI message in sigv format
+
+=head1 SYNOPSIS
+
+ch [ channel ] [ pitch ] [ velocity ] [ duration ] other
+
+=head1 OPTIONS
+
+=head1 DESCRIPTION
+
+ch takes 4 parameters: [channel] [pitch] [velocity] [duration] [other].
+Uses sendmidi library. Typical values for [other] include pc (program change), start, stop, pb (pitch bend), etc.
+
+=head1 EXAMPLES
+
+ch 4 60 64 1  (plays midi note 60 on channel 4 for one second)
+
+=head1 NOTES
+
+ch was the chosen element name for MIDI sending as the system instruments are primarily identified ny their channel.
+
+=head1 LICENSE AND COPYRIGHT
+
+MIT License
+
+Copyright (c) 2022 Marcus A. Gordon
+
+=cut
+END_OF_DOCS

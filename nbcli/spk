@@ -1,0 +1,11 @@
+#!/bin/bash
+
+file=$snd/$4.aiff
+
+if [[ "$1" == "-r" ]]
+then
+  say -o $file $2 -v $3 
+else
+  s spk "$@"
+fi
+

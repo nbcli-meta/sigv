@@ -1,0 +1,8 @@
+#!/bin/bash
+
+v=(cube sphere cylinder cone torus opencylinder opencube plane circle capsule)
+n=$( rand2 0 9 )
+
+s geo gs2 shape ${v[$n]}
+
+

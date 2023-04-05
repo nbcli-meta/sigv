@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+: <<'END_OF_DOCS'
+
+=head1 NAME
+
+lttp - [custom object] visual to sound operator for the Listen to the Pictures (LTTP) softsynth.
+
+=head1 SYNOPSIS
+
+lttp [ command ] [ value ] other
+
+=head1 OPTIONS
+
+Routes: sub ch metro activate slider close port pos drunk
+
+=head1 DESCRIPTION
+
+LTTP is a visual music instrument that is primarily an image synth that converts pixel luminance and colour information into MIDI patterns and signals.
+
+=head1 EXAMPLES
+
+lttp activate 1 - starts lttp
+lttp sub read hello.png - opens the hello.png file and displays it.
+
+=head1 NOTES
+
+
+
+=head1 LICENSE AND COPYRIGHT
+
+MIT License
+
+Copyright (c) 2023 Marcus A. Gordon
+
+=cut
+END_OF_DOCS

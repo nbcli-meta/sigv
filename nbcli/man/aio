@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+: <<'END_OF_DOCS'
+
+=head1 NAME
+
+aio - sigv.js audio interface module
+
+=head1 SYNOPSIS
+
+aio [ activate ] [ sigx > div ] [ sigy > div ] [ sig > div ] [ phase > div ] [ peak > div ] 
+
+=head1 OPTIONS
+
+Each of the module parameters: sigx, sigy, sig, phase, and peak have a div subparameter acting as a multiplier for expanding or compressing their entered values.
+
+=head1 DESCRIPTION
+
+The aio module activates the DSP in the Max environment, a requirment for analysis of incoming and outgoing audio.  Required for aio parameter of sigv.js primitives, and for modules such as grain (granular synth) and lttp (image synth).
+
+=head1 EXAMPLES
+
+aio activate 2 (activates audio DSP for incoming audio)
+aio peak 2 (transfers audio data to bfg module origin values, see man bfg for more information)
+
+=head1 NOTES
+
+
+
+=head1 LICENSE AND COPYRIGHT
+
+MIT License
+
+Copyright (c) 2022 Marcus A. Gordon
+
+=cut
+END_OF_DOCS
