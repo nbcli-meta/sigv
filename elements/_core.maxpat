@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 32.0, 42.0, 770.0, 164.0 ],
+		"rect" : [ 41.0, 95.0, 1023.0, 177.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,112 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 622.0, 426.0, 78.0, 23.0 ],
+					"text" : "prepend cmd"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 565.0, 390.0, 72.0, 23.0 ],
+					"text" : "clearHistory"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 645.0, 390.0, 76.0, 23.0 ],
+					"text" : "clearConsole"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 99.0, 450.0, 90.0, 23.0 ],
+					"text" : "print @popup 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 278.0, 450.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 508.0, 324.0, 41.0, 23.0 ],
+					"text" : "r coda"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 508.0, 357.0, 182.0, 23.0 ],
+					"text" : "route th clr1 clr2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 508.0, 456.0, 42.0, 23.0 ],
+					"text" : "s coda"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 508.0, 426.0, 105.0, 23.0 ],
+					"text" : "th.gl.commandline"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -52,6 +158,8 @@
 			}
 , 			{
 				"box" : 				{
+					"activebgcolor" : [ 0.164705882352941, 0.172549019607843, 0.180392156862745, 1.0 ],
+					"activetextcolor" : [ 0.995808362960815, 0.800102710723877, 0.399984955787659, 1.0 ],
 					"automation" : "",
 					"automationon" : "wclose",
 					"id" : "obj-35",
@@ -64,6 +172,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 47.0, 21.0, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "", "wclose" ],
 							"parameter_longname" : "live.text",
@@ -144,6 +260,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.12156862745098, 0.125490196078431, 0.129411764705882, 0.0 ],
 					"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"fontsize" : 20.0,
 					"id" : "obj-8",
 					"keymode" : 1,
 					"lines" : 1,
@@ -152,11 +269,10 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 23.5, 89.0, 248.0, 24.0 ],
+					"patching_rect" : [ 23.5, 89.0, 335.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 26.0, 38.0, 714.0, 102.0 ],
-					"tabmode" : 0,
-					"wordwrap" : 0
+					"presentation_rect" : [ 26.0, 52.0, 979.0, 102.0 ],
+					"tabmode" : 0
 				}
 
 			}
@@ -660,8 +776,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "bang", "" ],
-					"patching_rect" : [ 350.0, 275.0, 101.0, 109.0 ],
-					"text" : "jit.world sigv @visible 1 @enable 1 @size 1024 575 @dim 1920 1080 @erase_color 0 0 0 1 @fsaa 1",
+					"patching_rect" : [ 350.0, 275.0, 123.0, 109.0 ],
+					"text" : "jit.world sigv @fsmenubar 0 @visible 1 @enable 1 @size 1024 575 @dim 1920 1080 @erase_color 0 0 0 1 @fsaa 1",
 					"varname" : "wrld"
 				}
 
@@ -711,7 +827,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 500.0, 169.0, 100.0, 23.0 ],
+					"patching_rect" : [ 500.0, 165.0, 100.0, 23.0 ],
 					"text" : "route movie",
 					"varname" : "movie_route"
 				}
@@ -737,7 +853,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 500.0, 295.0, 165.0, 23.0 ],
+					"patching_rect" : [ 500.0, 288.0, 165.0, 23.0 ],
 					"text" : "jit.gl.node sigv @name monde",
 					"varname" : "monde"
 				}
@@ -752,30 +868,6 @@
 					"patching_rect" : [ 99.0, 369.0, 100.0, 23.0 ],
 					"text" : "aio",
 					"varname" : "aio"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 204.0, 394.0, 100.0, 23.0 ],
-					"text" : "geo",
-					"varname" : "geo"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 99.0, 444.0, 100.0, 23.0 ],
-					"text" : "light",
-					"varname" : "light"
 				}
 
 			}
@@ -797,7 +889,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 204.0, 369.0, 100.0, 23.0 ],
+					"patching_rect" : [ 202.0, 369.0, 100.0, 23.0 ],
 					"text" : "bfg",
 					"varname" : "bfg"
 				}
@@ -821,7 +913,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 99.0, 469.0, 100.0, 23.0 ],
+					"patching_rect" : [ 202.0, 419.0, 100.0, 23.0 ],
 					"text" : "tex0",
 					"varname" : "tex0"
 				}
@@ -829,6 +921,13 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-10", 0 ]
@@ -905,7 +1004,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"order" : 0,
+					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
+					"order" : 1,
 					"source" : [ "obj-2", 1 ]
 				}
 
@@ -943,6 +1051,34 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-25", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-25", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-34", 0 ]
 				}
@@ -952,6 +1088,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-45", 0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-45", 0 ],
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-45", 0 ]
 				}
 
 			}
@@ -1017,30 +1174,22 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "aio.maxpat",
-				"bootpath" : "~/sigv.js/sigv-js-main/patchers",
-				"patcherrelativepath" : "../../../../sigv.js/sigv-js-main/patchers",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bfg.maxpat",
-				"bootpath" : "~/sigv.js/sigv-js-main/patchers",
-				"patcherrelativepath" : "../../../../sigv.js/sigv-js-main/patchers",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "geo.maxpat",
-				"bootpath" : "~/sigv.js/sigv-js-main/patchers",
-				"patcherrelativepath" : "../../../../sigv.js/sigv-js-main/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "light.maxpat",
-				"bootpath" : "~/sigv.js/sigv-js-main/patchers",
-				"patcherrelativepath" : "../../../../sigv.js/sigv-js-main/patchers",
-				"type" : "JSON",
+				"name" : "fit_jweb_to_bounds.js",
+				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -1048,34 +1197,63 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "osc.maxpat",
-				"bootpath" : "~/sigv.js/sigv-js-main/patchers",
-				"patcherrelativepath" : "../../../../sigv.js/sigv-js-main/patchers",
+				"name" : "n4m.monitor.maxpat",
+				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "shell.mxo",
-				"type" : "iLaX"
+				"name" : "osc.maxpat",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "resize_n4m_monitor_patcher.js",
+				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sigv-exec.js",
+				"bootpath" : "~/sigv",
+				"patcherrelativepath" : "..",
+				"type" : "TEXT",
+				"implicit" : 1
 			}
 , 			{
 				"name" : "terminal.maxpat",
-				"bootpath" : "~/sigv.js/sigv-js-main/patchers",
-				"patcherrelativepath" : "../../../../sigv.js/sigv-js-main/patchers",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tex0.maxpat",
-				"bootpath" : "~/sigv.js/sigv-js-main/patchers",
-				"patcherrelativepath" : "../../../../sigv.js/sigv-js-main/patchers",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "th.gl.commandline.js",
+				"bootpath" : "~/Documents/Max 8/Library/th.gl.commandline/code",
+				"patcherrelativepath" : "../../Documents/Max 8/Library/th.gl.commandline/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "th.gl.commandline.maxpat",
+				"bootpath" : "~/Documents/Max 8/Library/th.gl.commandline/patchers",
+				"patcherrelativepath" : "../../Documents/Max 8/Library/th.gl.commandline/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tilde.maxpat",
-				"bootpath" : "~/sigv.js/sigv-js-main/patchers",
-				"patcherrelativepath" : "../../../../sigv.js/sigv-js-main/patchers",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}

@@ -2116,7 +2116,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1492.0, 148.0, 374.0, 258.0 ],
+						"rect" : [ 0.0, 28.0, 2048.0, 1280.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -2144,7 +2144,6 @@
 						"style" : "sigv.js",
 						"subpatcher_template" : "sigv.js",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-34",
