@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# MIDI Mapping for iPhone
+sendmidi dev "iPhone" ch ${1} on ${2} ${3}
+sleep ${4}
+sendmidi dev "iPhone" ch ${1} off ${2} ${3}

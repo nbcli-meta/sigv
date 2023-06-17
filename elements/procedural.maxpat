@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 2,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 626.0, 412.0, 418.0, 791.0 ],
+		"rect" : [ 1596.0, 219.0, 418.0, 836.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,29 @@
 		"subpatcher_template" : "[ M ] Slate",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 330.5, 782.0, 33.0, 23.0 ],
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 94.0, 363.0, 286.0, 23.0 ],
+					"text" : "position 0. 0. 0."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "mult",
 					"id" : "obj-39",
@@ -184,7 +207,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -614,8 +637,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 43.5, 373.0, 221.0, 23.0 ],
-					"text" : "jit.slide @slide_down 20 @slide_up 20"
+					"patching_rect" : [ 43.5, 373.0, 207.0, 23.0 ],
+					"text" : "jit.slide @slide_down 75 @slide_up 75"
 				}
 
 			}
@@ -691,7 +714,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -756,8 +779,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 95.0, 6.0, 95.0, 23.0 ],
-									"text" : "param period 2"
+									"patching_rect" : [ 95.0, 6.0, 98.0, 23.0 ],
+									"text" : "param period 0.2"
 								}
 
 							}
@@ -828,8 +851,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 95.0, 46.0, 84.0, 23.0 ],
-									"text" : "param scale 8."
+									"patching_rect" : [ 95.0, 46.0, 83.0, 23.0 ],
+									"text" : "param scale 2."
 								}
 
 							}
@@ -1168,13 +1191,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "jit.gen",
-						"rect" : [ 1080.0, 527.0, 391.0, 410.0 ],
+						"rect" : [ 1421.0, 788.0, 391.0, 410.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1750,8 +1773,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 83.5, 253.0, 250.0, 23.0 ],
-					"text" : "jit.bfg 1 float32 200 200 @basis noise.simplex"
+					"patching_rect" : [ 83.5, 253.0, 236.0, 23.0 ],
+					"text" : "jit.bfg 1 float32 50 50 @basis noise.simplex"
 				}
 
 			}
@@ -1775,8 +1798,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 23.5, 59.0, 371.0, 23.0 ],
-					"text" : "jit.gl.gridshape monde @shape torus @dim 200 200 @matrixoutput 1"
+					"patching_rect" : [ 23.5, 59.0, 369.0, 23.0 ],
+					"text" : "jit.gl.gridshape monde @shape cone @dim 100 100 @matrixoutput 1"
 				}
 
 			}
@@ -1983,6 +2006,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-45", 0 ],
+					"source" : [ "obj-3", 1 ]
 				}
 
 			}

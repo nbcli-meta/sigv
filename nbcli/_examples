@@ -49,3 +49,4 @@ geo gs1 shape $shapes[$(rand2 0 5)]
 sfor 3 "rand2 2 56" .25
 
 new pkmp 0 0 peakamp~ 60
+sfor 15 "rand 0 10" .01 | spark
