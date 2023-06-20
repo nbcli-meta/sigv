@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -281,7 +281,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -665,13 +665,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-2",
-					"linecount" : 7,
+					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "bang", "" ],
-					"patching_rect" : [ 350.0, 275.0, 123.0, 109.0 ],
-					"text" : "jit.world sigv @fsmenubar 0 @visible 1 @enable 1 @size 1024 575 @dim 1920 1080 @erase_color 0 0 0 1 @fsaa 1",
+					"patching_rect" : [ 500.0, 253.0, 276.0, 52.0 ],
+					"text" : "jit.world sigv @fsmenubar 0 @visible 1 @enable 1 @size 1024 575 @dim 1920 1080 @erase_color 0.05 0.05 0.05 1 @fsaa 1",
 					"varname" : "wrld"
 				}
 
@@ -695,7 +695,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 500.0, 253.0, 157.0, 23.0 ],
+					"patching_rect" : [ 323.5, 253.0, 157.0, 23.0 ],
 					"text" : "jit.gl.camera @position 0 0 4",
 					"varname" : "camera"
 				}
@@ -718,11 +718,11 @@
 				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 500.0, 165.0, 100.0, 23.0 ],
-					"text" : "route movie",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 500.0, 165.0, 127.0, 23.0 ],
+					"text" : "route movie wrld",
 					"varname" : "movie_route"
 				}
 
@@ -747,7 +747,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 500.0, 288.0, 165.0, 23.0 ],
+					"patching_rect" : [ 323.5, 288.0, 165.0, 23.0 ],
 					"text" : "jit.gl.node sigv @name monde",
 					"varname" : "monde"
 				}
@@ -856,6 +856,13 @@
 					"destination" : [ "obj-22", 2 ],
 					"midpoints" : [ 426.5, 127.5, 426.5, 127.5 ],
 					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-14", 1 ]
 				}
 
 			}
@@ -1012,6 +1019,13 @@
 				"name" : "bfg.maxpat",
 				"bootpath" : "~/sigv/elements",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "freq-analysis.pfft.maxpat",
+				"bootpath" : "~/systems",
+				"patcherrelativepath" : "../../systems",
 				"type" : "JSON",
 				"implicit" : 1
 			}
