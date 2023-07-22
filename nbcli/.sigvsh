@@ -251,7 +251,7 @@ function s() {
   $HOME/sigv/nbcli/max/s "$*" 
   }
 function zap() { 
-  s sys script delete "$*" 
+  s sys script delete "$@" 
   }
 function o() { 
   $HOME/sigv/nbcli/o "$@" 

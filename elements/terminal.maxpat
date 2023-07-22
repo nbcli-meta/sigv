@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -92,8 +92,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.041666666666629, 272.0, 80.0, 23.0 ],
-					"text" : "print"
+					"patching_rect" : [ 20.041666666666629, 272.0, 41.0, 23.0 ],
+					"text" : "s spec"
 				}
 
 			}

@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "memphis-style_template",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 37.0, 85.0, 57.0, 23.0 ],
+					"text" : "tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 37.0, 109.0, 71.0, 23.0 ],
+					"text" : "fromsymbol"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "newobj",
@@ -406,7 +430,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 65.0, 464.0, 255.0, 23.0 ],
-					"text" : "close"
+					"text" : "orca a t 18 20 18"
 				}
 
 			}
@@ -428,7 +452,7 @@
 					"numinlets" : 8,
 					"numoutlets" : 8,
 					"outlettype" : [ "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 37.0, 89.0, 155.0, 23.0 ],
+					"patching_rect" : [ 37.0, 153.0, 155.0, 23.0 ],
 					"text" : "route /sigv /p /1 /2 /3 /4 /s"
 				}
 
@@ -490,7 +514,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1004,8 +1028,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
+					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -1027,7 +1065,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
-					"midpoints" : [ 65.928571428571431, 106.0, 111.5, 106.0 ],
+					"midpoints" : [ 65.928571428571431, 188.0, 111.5, 188.0 ],
 					"order" : 0,
 					"source" : [ "obj-20", 1 ]
 				}
@@ -1062,7 +1100,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
-					"midpoints" : [ 65.928571428571431, 105.0, 74.5, 105.0 ],
+					"midpoints" : [ 65.928571428571431, 295.5, 74.5, 295.5 ],
 					"order" : 1,
 					"source" : [ "obj-20", 1 ]
 				}
@@ -1071,7 +1109,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
-					"midpoints" : [ 46.5, 105.0, 74.5, 105.0 ],
+					"midpoints" : [ 46.5, 295.5, 74.5, 295.5 ],
 					"order" : 1,
 					"source" : [ "obj-20", 0 ]
 				}
