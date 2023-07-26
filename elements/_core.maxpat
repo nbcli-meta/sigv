@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 138.0, 214.0, 333.0, 76.0 ],
+		"rect" : [ 643.0, 184.0, 790.0, 314.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1840,6 +1840,8 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-23::obj-40" : [ "live.text[3]", "live.text", 0 ],
+			"obj-23::obj-41" : [ "live.toggle[3]", "live.toggle", 0 ],
 			"obj-34" : [ "live.toggle", "live.toggle", 0 ],
 			"obj-35" : [ "live.text", "live.text", 0 ],
 			"parameterbanks" : 			{

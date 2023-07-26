@@ -1,0 +1,12 @@
+0, points;
+1, lines;
+2, line_strip;
+3, line_loop;
+4, triangles;
+5, tri_strip;
+6, tri_fan;
+7, quads;
+8, quad_strip;
+9, polygon;
+10, tri_grid;
+11, quad_grid;

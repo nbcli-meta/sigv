@@ -1,0 +1,1 @@
+0, geo gs1 shape sphere;1, geo gs1 shape torus;2, geo gs1 shape cylinder;3, geo gs1 shape opencylinder;4, geo gs1 shape cube;5, geo gs1 shape opencube;6, geo gs1 shape plane;7, geo gs1 shape circle;8, geo gs1 shape cone;9, geo gs1 shape capsule;
