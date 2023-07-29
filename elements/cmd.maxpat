@@ -77,7 +77,7 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 24.0, 258.0, 105.0, 23.0 ],
@@ -95,7 +95,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-1", 1 ],
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -108,22 +108,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "th.gl.commandline.js",
-				"bootpath" : "~/sigv/lib/th.gl.commandline/code",
-				"patcherrelativepath" : "../lib/th.gl.commandline/code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "th.gl.commandline.maxpat",
-				"bootpath" : "~/sigv/lib/th.gl.commandline",
-				"patcherrelativepath" : "../lib/th.gl.commandline",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

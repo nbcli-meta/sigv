@@ -2439,8 +2439,8 @@
 					"numinlets" : 9,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 27.600000000000023, 979.0, 576.399999999999977, 37.0 ],
-					"text" : "jit.gl.mesh monde @enable 1 @poly_mode 1 1 @lighting_enable 1 @animmode local @smooth_shading 1 @auto_normals 1 @draw_mode tri_grid"
+					"patching_rect" : [ 27.600000000000023, 979.0, 653.0, 37.0 ],
+					"text" : "jit.gl.mesh monde @enable 1 @poly_mode 1 1 @lighting_enable 1 @animmode local @smooth_shading 1 @auto_normals 1 @draw_mode tri_grid @point_size 7.5"
 				}
 
 			}
@@ -2970,7 +2970,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-58", 1 ],
-					"midpoints" : [ 225.5, 584.0, 106.77500000000002, 584.0 ],
+					"midpoints" : [ 225.5, 584.0, 116.350000000000023, 584.0 ],
 					"source" : [ "obj-68", 0 ]
 				}
 
