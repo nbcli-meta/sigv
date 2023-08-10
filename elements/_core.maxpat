@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 643.0, 184.0, 790.0, 428.0 ],
+		"rect" : [ 1235.0, 827.0, 790.0, 428.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1029,25 +1029,26 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-31",
+					"bgcolor" : [ 0.050980392156863, 0.223529411764706, 0.388235294117647, 1.0 ],
+					"id" : "obj-32",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 409.0, 382.0, 100.0, 23.0 ],
-					"text" : "cmd",
-					"varname" : "cmd"
+					"patching_rect" : [ 285.0, 318.0, 100.0, 23.0 ],
+					"text" : "orca",
+					"varname" : "orca"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-32",
+					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.0, 28.0, 100.0, 23.0 ],
-					"text" : "orca",
-					"varname" : "orca"
+					"patching_rect" : [ 285.0, 350.0, 100.0, 23.0 ],
+					"text" : "asl",
+					"varname" : "asl"
 				}
 
 			}
@@ -1196,6 +1197,21 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-1::obj-14::obj-28" : [ "live.tab", "live.tab", 0 ],
+			"obj-1::obj-14::obj-55::obj-1" : [ "2 Smooth", "Smooth", 0 ],
+			"obj-1::obj-14::obj-55::obj-18" : [ "2 Stream Rate", "Rate", 0 ],
+			"obj-1::obj-14::obj-55::obj-21" : [ "2 Input Mode", "Input Mode", 0 ],
+			"obj-1::obj-14::obj-55::obj-22" : [ "2 Direction", "Direction", 0 ],
+			"obj-1::obj-14::obj-55::obj-45" : [ "2 Hysteresis", "Hysteresis", 0 ],
+			"obj-1::obj-14::obj-55::obj-46" : [ "2 Threshold", "Threshold", 0 ],
+			"obj-1::obj-14::obj-55::obj-54" : [ "live.numbox", "live.numbox", 0 ],
+			"obj-1::obj-14::obj-56::obj-1" : [ "1 Smooth", "Smooth", 0 ],
+			"obj-1::obj-14::obj-56::obj-18" : [ "1 Stream Rate", "Rate", 0 ],
+			"obj-1::obj-14::obj-56::obj-21" : [ "1 Input Mode", "Input Mode", 0 ],
+			"obj-1::obj-14::obj-56::obj-22" : [ "1 Direction", "Direction", 0 ],
+			"obj-1::obj-14::obj-56::obj-45" : [ "1 Hysteresis", "Hysteresis", 0 ],
+			"obj-1::obj-14::obj-56::obj-46" : [ "1 Threshold", "Threshold", 0 ],
+			"obj-1::obj-14::obj-56::obj-54" : [ "live.numbox[1]", "live.numbox", 0 ],
 			"obj-23::obj-40" : [ "live.text[3]", "live.text", 0 ],
 			"obj-23::obj-41" : [ "live.toggle[3]", "live.toggle", 0 ],
 			"obj-32::obj-18::obj-26" : [ "live.text[2]", "live.text", 0 ],
@@ -1213,11 +1229,25 @@
 
 			}
 ,
+			"parameter_overrides" : 			{
+				"obj-1::obj-14::obj-56::obj-54" : 				{
+					"parameter_longname" : "live.numbox[1]"
+				}
+
+			}
+,
 			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "aio.maxpat",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "asl.maxpat",
 				"bootpath" : "~/sigv/elements",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -1231,9 +1261,65 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "cmd.maxpat",
-				"bootpath" : "~/sigv/elements",
-				"patcherrelativepath" : ".",
+				"name" : "crow.adsr.maxpat",
+				"bootpath" : "~/crow-max-and-m4l-main/crow_max/abstractions",
+				"patcherrelativepath" : "../../crow-max-and-m4l-main/crow_max/abstractions",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "crow.ar.maxpat",
+				"bootpath" : "~/crow-max-and-m4l-main/crow_max/abstractions",
+				"patcherrelativepath" : "../../crow-max-and-m4l-main/crow_max/abstractions",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "crow.function.maxpat",
+				"bootpath" : "~/crow-max-and-m4l-main/crow_max/abstractions",
+				"patcherrelativepath" : "../../crow-max-and-m4l-main/crow_max/abstractions",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "crow.input.gui.maxpat",
+				"bootpath" : "~/crow-max-and-m4l-main/crow_max/bpatchers",
+				"patcherrelativepath" : "../../crow-max-and-m4l-main/crow_max/bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "crow.inputs.maxpat",
+				"bootpath" : "~/crow-max-and-m4l-main/crow_max/bpatchers",
+				"patcherrelativepath" : "../../crow-max-and-m4l-main/crow_max/bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "crow.maxpat",
+				"bootpath" : "~/crow-max-and-m4l-main/crow_max",
+				"patcherrelativepath" : "../../crow-max-and-m4l-main/crow_max",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "crow.n2v.maxpat",
+				"bootpath" : "~/crow-max-and-m4l-main/crow_max/abstractions",
+				"patcherrelativepath" : "../../crow-max-and-m4l-main/crow_max/abstractions",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "crow.var.maxpat",
+				"bootpath" : "~/crow-max-and-m4l-main/crow_max/abstractions",
+				"patcherrelativepath" : "../../crow-max-and-m4l-main/crow_max/abstractions",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "crow.volts.maxpat",
+				"bootpath" : "~/crow-max-and-m4l-main/crow_max/abstractions",
+				"patcherrelativepath" : "../../crow-max-and-m4l-main/crow_max/abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1312,20 +1398,6 @@
 				"name" : "tex0.maxpat",
 				"bootpath" : "~/sigv/elements",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "th.gl.commandline.js",
-				"bootpath" : "~/sigv/lib/th.gl.commandline/code",
-				"patcherrelativepath" : "../lib/th.gl.commandline/code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "th.gl.commandline.maxpat",
-				"bootpath" : "~/sigv/lib/th.gl.commandline",
-				"patcherrelativepath" : "../lib/th.gl.commandline",
 				"type" : "JSON",
 				"implicit" : 1
 			}

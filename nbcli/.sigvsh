@@ -84,6 +84,9 @@ function cv() {
 function fpic() {
   $HOME/sigv/nbcli/max/fpic "$@" 
   }
+function fx() {
+  $HOME/sigv/nbcli/max/fx "$@" 
+  }
 function geo() {
   $HOME/sigv/nbcli/max/geo "$@" 
   }
@@ -165,6 +168,9 @@ function ~() {
   }
 function wave() {
   $HOME/sigv/nbcli/max/wave "$@" 
+  }
+function wrld() {
+  $HOME/sigv/nbcli/max/wrld "$@" 
   }
 
 
