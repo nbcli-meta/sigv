@@ -69,6 +69,9 @@ function asl() {
 function bfg() {
   $HOME/sigv/nbcli/max/bfg "$@" 
   }
+function camera() {
+  $HOME/sigv/nbcli/max/camera "$@" 
+  }
 function burke-shaw() {
   $HOME/sigv/nbcli/max/burke-shaw "$@" 
   }

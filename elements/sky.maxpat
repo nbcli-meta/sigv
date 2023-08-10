@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 0,
+			"minor" : 5,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "sigv.js",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 213.0, 16.0, 56.0, 23.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
@@ -95,8 +107,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 16.0, 246.0, 149.0, 23.0 ],
-					"text" : "jit.gl.skybox monde"
+					"patching_rect" : [ 16.0, 246.0, 250.0, 23.0 ],
+					"text" : "jit.gl.skybox monde @infinite 0 @scale 64"
 				}
 
 			}
@@ -150,6 +162,13 @@
 					"destination" : [ "obj-7", 0 ],
 					"order" : 0,
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
