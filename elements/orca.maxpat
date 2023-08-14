@@ -17118,7 +17118,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 18.0, 462.0, 316.0, 37.0 ],
+					"patching_rect" : [ 18.0, 462.0, 351.0, 37.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
@@ -17127,7 +17127,7 @@
 						"watch" : 0
 					}
 ,
-					"text" : "node.script /Users/magfoto/desktop/o-sigv/orca-sigv/desktop/main.js"
+					"text" : "node.script /Users/magfoto/desktop/_/o-sigv-dev/orca-sigv/desktop/main.js"
 				}
 
 			}
@@ -17519,6 +17519,64 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-18::obj-26" : [ "live.text[2]", "live.text", 0 ],
+			"obj-18::obj-5" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-26" : [ "live.text[4]", "live.text", 0 ],
+			"obj-31" : [ "live.toggle[4]", "live.toggle", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "e.txt",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "func.txt",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gs1.txt",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gs2.txt",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "main.js",
+				"bootpath" : "~/Desktop/_/o-sigv-dev/Orca-sigv/desktop",
+				"patcherrelativepath" : "../../Desktop/_/o-sigv-dev/Orca-sigv/desktop",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
