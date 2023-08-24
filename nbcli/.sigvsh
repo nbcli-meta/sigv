@@ -132,6 +132,9 @@ function morph0() {
 function morpha() {
   $HOME/sigv/nbcli/max/morpha "$@" 
   }
+function nature() {
+  $HOME/sigv/nbcli/max/nature "$@" 
+  }
 function new() {
   $HOME/sigv/nbcli/max/new "$@" 
   }
@@ -179,38 +182,7 @@ function wrld() {
 
 ## sigv cli
 function sigv() {
-  if [[ "$1" == "--config" ]]
-  then
-    nano $NBCLI/.sigvsh
-  elif [[ "$1" == "-b" ]]
-  then
-    cd $HOME/sigv/nbcli && ls
-  elif [[ "$1" == "--examples" ]]
-  then
-    cat $HOME/sigv/nbcli/_examples
-  elif [[ "$1" == "-m" ]]
-  then
-    cp $HOME/sigv/nbcli/man/_template  $HOME/sigv/nbcli/man/"$2"
-   elif [[ "$1" == "--mpub" ]]
-  then
-    cd $HOME/sigv/nbcli/man && pod2man "$2" > "$2".1 && pod2html "$2" > "$2".html && cp "$2".1 /usr/local/share/man/man1/"$2".1 && gzip /usr/local/share/man/man1/"$2".1
-    cp "$2".1 /usr/local/share/man/man1/"$2".1
-    gzip /usr/local/share/man/man1/"$2".1
-    reload
-    man "$2"
-  elif [[ "$1" == "-j" ]]
-  then
-    echo "Launching sigv.js..."
-    open $HOME/sigv.js/sigv-js-main/patchers/sigv-js-main.maxpat
-  else
-    echo "Launching sigv2..."
-    open "$HOME/sigv/elements/_core.maxpat"
-    cd $NBCLI
-    echo "Options: sigv -j [(default) launch sigv.js] -b [set directory to nbcli] --examples [display example code] -m [create new man page] --config [open sigv shell configuration]"
-    echo " "
-    echo "sigv: a mini-language for transmodal live coding"
-    echo "https://sigv.xyz/"
-  fi
+  $HOME/sigv/nbcli/sigv "$@"
 }
 
 function help() {

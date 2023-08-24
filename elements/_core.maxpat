@@ -1353,8 +1353,8 @@
 			}
 , 			{
 				"name" : "main.js",
-				"bootpath" : "~/Desktop/o-sigv/Orca-sigv/desktop",
-				"patcherrelativepath" : "../../Desktop/o-sigv/Orca-sigv/desktop",
+				"bootpath" : "~/Desktop/_/o-sigv-dev/Orca-sigv/desktop",
+				"patcherrelativepath" : "../../Desktop/_/o-sigv-dev/Orca-sigv/desktop",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
