@@ -142,6 +142,9 @@ function nurbs() {
   $HOME/sigv/nbcli/max/nurbs "$@" 
   }
 # function orca() { s orca "$@" }
+function particles() {
+  $HOME/sigv/nbcli/max/particles "$@" 
+  }
 function plato() {
   $HOME/sigv/nbcli/max/plato "$@" 
   }
