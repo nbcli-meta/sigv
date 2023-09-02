@@ -66,6 +66,18 @@ function aio() {
 function asl() {
   $HOME/sigv/nbcli/max/asl "$@" 
   }
+function b0() {
+  $HOME/sigv/nbcli/max/b0 "$@" 
+  }
+function b1() {
+  $HOME/sigv/nbcli/max/b1 "$@" 
+  }
+function b2() {
+  $HOME/sigv/nbcli/max/b2 "$@" 
+  }
+function b3() {
+  $HOME/sigv/nbcli/max/b3 "$@" 
+  }
 function bfg() {
   $HOME/sigv/nbcli/max/bfg "$@" 
   }

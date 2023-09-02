@@ -1,0 +1,10 @@
+0, proc gs shape sphere;
+1, proc gs shape torus;
+2, proc gs shape cylinder;
+3, proc gs shape opencylinder;
+4, proc gs shape cube;
+5, proc gs shape opencube;
+6, proc gs shape plane;
+7, proc gs shape circle;
+8, proc gs shape cone;
+9, proc gs shape capsule;
