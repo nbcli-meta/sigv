@@ -152,8 +152,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 180.0, 165.0, 255.0, 23.0 ],
-									"text" : "clearh clearc debugEnable setAlpha logoEnable"
+									"patching_rect" : [ 180.0, 165.0, 283.0, 23.0 ],
+									"text" : "clearh clearc clear debugEnable setAlpha logoEnable"
 								}
 
 							}
@@ -757,7 +757,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 474.0, 195.0, 84.0, 23.0 ],
+					"patching_rect" : [ 474.0, 195.0, 98.0, 23.0 ],
 					"text" : "r #0_render"
 				}
 
@@ -768,7 +768,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 93.0, 104.0, 86.0, 23.0 ],
+					"patching_rect" : [ 93.0, 104.0, 99.0, 23.0 ],
 					"text" : "s #0_render"
 				}
 

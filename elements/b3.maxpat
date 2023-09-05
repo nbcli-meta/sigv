@@ -1013,8 +1013,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 220.5, 447.0, 233.5, 23.0 ],
-					"text" : "nodebind u340010878_Landscape sbj"
+					"patching_rect" : [ 220.5, 447.0, 233.5, 23.0 ]
 				}
 
 			}
@@ -1036,8 +1035,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 473.0, 481.0, 161.0, 23.0 ],
-					"text" : "jit.anim.node @name sbj"
+					"patching_rect" : [ 473.0, 481.0, 143.0, 23.0 ],
+					"text" : "jit.anim.node @name sbj3"
 				}
 
 			}

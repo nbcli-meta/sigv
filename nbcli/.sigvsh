@@ -81,6 +81,9 @@ function b3() {
 function bfg() {
   $HOME/sigv/nbcli/max/bfg "$@" 
   }
+function biomes() {
+  $HOME/sigv/nbcli/max/biomes "$@" 
+  }
 function camera() {
   $HOME/sigv/nbcli/max/camera "$@" 
   }

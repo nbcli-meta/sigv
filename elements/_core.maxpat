@@ -1338,6 +1338,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "gs.txt",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "gs1.txt",
 				"bootpath" : "~/sigv/elements",
 				"patcherrelativepath" : ".",
