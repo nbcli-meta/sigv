@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 5,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -143,7 +143,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "", "" ],
 					"patching_rect" : [ 785.5, 158.0, 230.0, 23.0 ],
-					"text" : "jit.gl.node monde @name biomes @layer 2"
+					"text" : "jit.gl.node monde @name biomes @layer 1"
 				}
 
 			}
@@ -232,7 +232,7 @@
 ,
 						"valueof" : 						{
 							"parameter_enum" : [ "", "wclose" ],
-							"parameter_longname" : "live.text[6]",
+							"parameter_longname" : "live.text[12]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -260,7 +260,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_longname" : "live.toggle[6]",
+							"parameter_longname" : "live.toggle[12]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.toggle",
 							"parameter_type" : 2
@@ -321,7 +321,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 5,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -738,7 +738,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 5,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1401,14 +1401,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"midpoints" : [ 1102.5, 242.0, 1062.5, 242.0 ],
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"midpoints" : [ 1134.833333333333258, 192.0, 1025.5, 192.0 ],
 					"source" : [ "obj-21", 1 ]
@@ -1557,23 +1549,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-34" : [ "live.toggle[6]", "live.toggle", 0 ],
-			"obj-35" : [ "live.text[6]", "live.text", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
