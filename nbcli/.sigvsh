@@ -120,8 +120,8 @@ function lfo() {
 function light() {
   $HOME/sigv/nbcli/max/light "$@" 
   }
-function lorenz() {
-  $HOME/sigv/nbcli/max/lorenz "$@" 
+function lz() {
+  $HOME/sigv/nbcli/max/lz "$@" 
   }
 function lttp() {
   $HOME/sigv/nbcli/max/lttp "$@" 
@@ -134,6 +134,9 @@ function midi() {
   }
 function model() {
   $HOME/sigv/nbcli/max/model "$@" 
+  }
+function monde() {
+  $HOME/sigv/nbcli/max/monde "$@" 
   }
 function morph() {
   $HOME/sigv/nbcli/max/morph "$@" 

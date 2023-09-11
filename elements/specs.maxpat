@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 222.0, 222.0, 660.0, 23.0 ],
+					"text" : "jit.gl.text @color 0.15 0.15 0.15 0.5 @position 0.1 -1.35 0. @fontsize 12 @mode 3d @align 1 @layer 1 @scale 0.06 0.06 0.06"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-47",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -2484,42 +2496,6 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 100.0, 23.0 ],
-					"text" : "geo",
-					"varname" : "geo"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 100.0, 23.0 ],
-					"text" : "geo",
-					"varname" : "geo[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 100.0, 23.0 ],
-					"text" : "light",
-					"varname" : "light"
-				}
-
-			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -2555,6 +2531,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
 					"source" : [ "obj-10", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-10", 4 ]
 				}
 
 			}
@@ -2634,14 +2617,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"midpoints" : [ 647.5, 215.0, 607.5, 215.0 ],
-					"source" : [ "obj-21", 0 ]
 				}
 
 			}

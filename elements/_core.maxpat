@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1235.0, 827.0, 790.0, 428.0 ],
+		"rect" : [ 878.0, 1116.0, 688.0, 160.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -203,7 +203,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.5, 169.0, 335.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 26.0, 78.0, 248.0, 34.0 ],
+					"presentation_rect" : [ 26.0, 47.0, 248.0, 65.0 ],
 					"tabmode" : 0
 				}
 
@@ -956,6 +956,8 @@
 			"obj-3::obj-18::obj-5" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"obj-3::obj-26" : [ "live.text[4]", "live.text", 0 ],
 			"obj-3::obj-31" : [ "live.toggle[4]", "live.toggle", 0 ],
+			"obj-4::obj-34" : [ "live.toggle[16]", "live.toggle", 0 ],
+			"obj-4::obj-35" : [ "live.text[16]", "live.text", 0 ],
 			"obj-7::obj-112" : [ "live.toggle[11]", "live.toggle", 0 ],
 			"obj-7::obj-35" : [ "live.text[11]", "live.text", 0 ],
 			"parameterbanks" : 			{
