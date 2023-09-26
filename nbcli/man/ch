@@ -25,6 +25,31 @@ ch 4 60 64 1  (plays midi note 60 on channel 4 for one second)
 
 ch was the chosen element name for MIDI sending as the system instruments are primarily identified ny their channel.
 
+
+ MIDI instrument commands
+
+        +--------+
+        |   ch   |
+        +--------+
+          |
+          |
+          |
+        +--------+
+        |  mod   |
+        +--------+
+        +--------+
+        |  ipad  |
+        +--------+
+        +--------+
+        | iphone |
+        +--------+
+        +--------+
+        |  opz   |
+        +--------+
+        +--------+
+        |  usb   |
+        +--------+
+
 =head1 LICENSE AND COPYRIGHT
 
 MIT License

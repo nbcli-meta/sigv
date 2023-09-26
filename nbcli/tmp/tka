@@ -1,0 +1,5 @@
+#!/bin/bash
+
+b0 drawgroup `rand 10`
+sleep 1
+

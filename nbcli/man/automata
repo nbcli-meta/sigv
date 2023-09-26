@@ -8,13 +8,13 @@ automata - automatic iteration
 
 =head1 SYNOPSIS
 
-automata  [ command(s) ]
+automata [ sleep/rate ]  [ command(s) ]
 
 =head1 OPTIONS
 
 =head1 DESCRIPTION
 
-automatically iterates a set of commands indefinitely or until the process is manually ended.
+automatically iterates at a specified rate a set of commands indefinitely or until the process is manually ended.
 
 =head1 EXAMPLES
 

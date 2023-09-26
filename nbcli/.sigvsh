@@ -78,6 +78,18 @@ function b2() {
 function b3() {
   $HOME/sigv/nbcli/max/b3 "$@" 
   }
+function b4() {
+  $HOME/sigv/nbcli/max/b4 "$@"
+  }
+function b5() {
+  $HOME/sigv/nbcli/max/b5 "$@"
+  }
+function b6() {
+  $HOME/sigv/nbcli/max/b6 "$@"
+  }
+function b7() {
+  $HOME/sigv/nbcli/max/b7 "$@"
+  }
 function bfg() {
   $HOME/sigv/nbcli/max/bfg "$@" 
   }
@@ -282,6 +294,7 @@ function iter() {$HOME/sigv/nbcli/iter "$@" & }
 function random() {$HOME/sigv/nbcli/random "$@" }
 function rand() {$HOME/sigv/nbcli/rand "$@" }
 function randx() {$HOME/sigv/nbcli/randx "$@" }
+function rand0() {$HOME/sigv/nbcli/rand0 "$@" }
 function count() {$HOME/sigv/nbcli/count "$@" }
 function gen() {$HOME/sigv/nbcli/gen "$@" & }
 function ch() {$HOME/sigv/nbcli/ch "$@" }

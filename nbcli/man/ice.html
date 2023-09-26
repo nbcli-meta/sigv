@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ipad - sending a MIDI message in sigv format to iPad instrument</title>
+<title>ice - experimental command for controlling IceCube volumetric display</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rev="made" href="mailto:root@bbmhh.p1s.plx.sd.apple.com" />
 </head>
@@ -23,25 +23,21 @@
 
 <h1 id="NAME">NAME</h1>
 
-<p>ipad - sending a MIDI message in sigv format to iPad instrument</p>
+<p>ice - experimental command for controlling IceCube volumetric display</p>
 
 <h1 id="SYNOPSIS">SYNOPSIS</h1>
 
-<p>ipad [ channel ] [ pitch ] [ velocity ] [ duration ] other</p>
+<p>ice [ agent ] [ param 1 ] [ param 2 ] [ param 3 ] [ param 4 ]</p>
 
 <h1 id="OPTIONS">OPTIONS</h1>
 
 <h1 id="DESCRIPTION">DESCRIPTION</h1>
 
-<p>ipad takes 4 parameters: [channel] [pitch] [velocity] [duration] [other]. Uses sendmidi library. Typical values for [other] include pc (program change), start, stop, pb (pitch bend), etc.</p>
+<p>ice is an experimental command that sends a custom message to an OSC module within the IceCube display.</p>
 
 <h1 id="EXAMPLES">EXAMPLES</h1>
 
-<p>ipad 4 60 64 1 (plays midi note 60 on channel 4 for one second)</p>
-
 <h1 id="NOTES">NOTES</h1>
-
-<p>ipad was the chosen element name for MIDI sending as the system instruments are primarily identified ny their channel.</p>
 
 <h1 id="LICENSE-AND-COPYRIGHT">LICENSE AND COPYRIGHT</h1>
 

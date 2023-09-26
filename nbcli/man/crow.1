@@ -132,29 +132,26 @@
 .rm #[ #] #H #V #F C
 .\" ========================================================================
 .\"
-.IX Title "OPZ 1"
-.TH OPZ 1 "2023-09-26" "perl v5.30.3" "User Contributed Perl Documentation"
+.IX Title "CROW 1"
+.TH CROW 1 "2023-09-26" "perl v5.30.3" "User Contributed Perl Documentation"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
 .nh
 .SH "NAME"
-opz \- sending a MIDI message in sigv format to OP\-Z instrument
+crow \- experimental command for controlling Crow sound computer
 .SH "SYNOPSIS"
 .IX Header "SYNOPSIS"
-opz [ channel ] [ pitch ] [ velocity ] [ duration ] other
+crow [ lua code ]
 .SH "OPTIONS"
 .IX Header "OPTIONS"
 .SH "DESCRIPTION"
 .IX Header "DESCRIPTION"
-opz takes 4 parameters: [channel] [pitch] [velocity] [duration] [other].
-Uses sendmidi library. Typical values for [other] include pc (program change), start, stop, pb (pitch bend), etc.
+The Crow sound computer interprets Lua code, and the sigv crow command is a prototype for writing and automatically uploading Lua code via \s-1USB\s0 to Crow module.
 .SH "EXAMPLES"
 .IX Header "EXAMPLES"
-opz 4 60 64 1  (plays midi note 60 on channel 4 for one second)
 .SH "NOTES"
 .IX Header "NOTES"
-opz was the chosen element name for \s-1MIDI\s0 sending as the system instruments are primarily identified ny their channel.
 .SH "LICENSE AND COPYRIGHT"
 .IX Header "LICENSE AND COPYRIGHT"
 \&\s-1MIT\s0 License

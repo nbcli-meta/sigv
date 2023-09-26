@@ -133,27 +133,30 @@
 .\" ========================================================================
 .\"
 .IX Title "IPAD 1"
-.TH IPAD 1 "2022-06-07" "perl v5.30.3" "User Contributed Perl Documentation"
+.TH IPAD 1 "2023-09-26" "perl v5.30.3" "User Contributed Perl Documentation"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
 .nh
 .SH "NAME"
-.Vb 1
-\& \-
-.Ve
+ipad \- sending a MIDI message in sigv format to iPad instrument
 .SH "SYNOPSIS"
 .IX Header "SYNOPSIS"
+ipad [ channel ] [ pitch ] [ velocity ] [ duration ] other
 .SH "OPTIONS"
 .IX Header "OPTIONS"
 .SH "DESCRIPTION"
 .IX Header "DESCRIPTION"
+ipad takes 4 parameters: [channel] [pitch] [velocity] [duration] [other].
+Uses sendmidi library. Typical values for [other] include pc (program change), start, stop, pb (pitch bend), etc.
 .SH "EXAMPLES"
 .IX Header "EXAMPLES"
+ipad 4 60 64 1  (plays midi note 60 on channel 4 for one second)
 .SH "NOTES"
 .IX Header "NOTES"
+ipad was the chosen element name for \s-1MIDI\s0 sending as the system instruments are primarily identified ny their channel.
 .SH "LICENSE AND COPYRIGHT"
 .IX Header "LICENSE AND COPYRIGHT"
 \&\s-1MIT\s0 License
 .PP
-Copyright (c) 2022 Marcus A. Gordon
+Copyright (c) 2023 Marcus A. Gordon
