@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 110.0, 577.0, 202.0, 23.0 ],
+					"patching_rect" : [ 86.0, 588.0, 202.0, 23.0 ],
 					"text" : "jit.slide @slide_up 5 @slide_down 5"
 				}
 
@@ -590,7 +590,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 128.5, 474.0, 103.0, 37.0 ],
-					"text" : "-14.444621 -0.060053"
+					"text" : "-19.083883 -0.000218"
 				}
 
 			}
@@ -2152,7 +2152,7 @@
 						}
 ,
 						"classnamespace" : "jit.gen",
-						"rect" : [ 747.0, 194.0, 293.0, 270.0 ],
+						"rect" : [ 474.0, 840.0, 293.0, 270.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2182,25 +2182,13 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-18",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 211.0, 154.0, 47.0, 23.0 ],
-									"text" : "* twopi"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-17",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 159.0, 118.0, 38.0, 23.0 ],
-									"text" : "plane"
+									"patching_rect" : [ 159.0, 118.0, 44.0, 23.0 ],
+									"text" : "sphere"
 								}
 
 							}
@@ -2982,8 +2970,8 @@
 					"numinlets" : 9,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 23.0, 757.0, 685.0, 23.0 ],
-					"text" : "jit.gl.mesh monde @depth_enable 1 @blend_enable 1 @lighting_enable 1 @animmode local @draw_mode points @color 1 1 1 0.5"
+					"patching_rect" : [ 23.0, 757.0, 779.0, 23.0 ],
+					"text" : "jit.gl.mesh monde @depth_enable 1 @blend_enable 1 @auto_normals 1 @lighting_enable 1 @animmode local @draw_mode points @color 1 1 1 0.5"
 				}
 
 			}

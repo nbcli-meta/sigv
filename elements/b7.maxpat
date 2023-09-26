@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 532.0, 216.0, 887.0, 945.0 ],
+		"rect" : [ 588.0, 110.0, 907.0, 961.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -105,7 +105,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 401.5, 693.0, 282.0, 23.0 ]
+					"patching_rect" : [ 401.5, 693.0, 282.0, 23.0 ],
+					"text" : "bio0_VisualScene"
 				}
 
 			}
@@ -219,7 +220,7 @@
 ,
 						"valueof" : 						{
 							"parameter_enum" : [ "", "wclose" ],
-							"parameter_longname" : "live.text[9]",
+							"parameter_longname" : "live.text[13]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -247,7 +248,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_longname" : "live.toggle[9]",
+							"parameter_longname" : "live.toggle[13]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.toggle",
 							"parameter_type" : 2
@@ -732,7 +733,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 75.0, 484.0, 233.5, 23.0 ]
+					"patching_rect" : [ 75.0, 484.0, 233.5, 23.0 ],
+					"text" : "nodebind bio0_VisualScene sbj"
 				}
 
 			}
@@ -944,7 +946,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-70",
-					"items" : [ "bio1_VisualScene", ",", "bio1_node" ],
+					"items" : [ "bio7_Scene", ",", "bio7_Text.001", ",", "bio7_Plant_Monstera-variegata_A_spring-summer-autumn.001", ",", "bio7_Plant_Monstera-variegata_A_spring-summer-autumn.8", ",", "bio7_Plant_Monstera-variegata_A_spring-summer-autumn.10", ",", "bio7_Grass_Basic_D_spring-summer.4", ",", "bio7_Grass_Basic_D_spring-summer.5", ",", "bio7_Grass_Basic_D_spring-summer.18", ",", "bio7_Grass_Basic_D_spring-summer.34", ",", "bio7_Grass_Basic_D_spring-summer.35", ",", "bio7_Misc_Dead-leaves_A_spring-summer.1", ",", "bio7_Misc_Dead-leaves_A_spring-summer.26", ",", "bio7_Misc_Dead-leaves_A_spring-summer.40", ",", "bio7_Misc_Dead-leaves_A_spring-summer.43", ",", "bio7_Weed_Clover_A_spring-summer.12" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1126,7 +1128,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 27.600000000000023, 516.0, 267.0, 23.0 ],
-					"text" : "jit.gl.model biomes @name bio1 @matrixoutput 0"
+					"text" : "jit.gl.model biomes @name bio7 @matrixoutput 0"
 				}
 
 			}
@@ -1150,7 +1152,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 27.600000000000023, 56.0, 54.0, 23.0 ],
-					"text" : "route b1"
+					"text" : "route b7"
 				}
 
 			}
@@ -1611,6 +1613,23 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-35" : [ "live.text[13]", "live.text", 0 ],
+			"obj-37" : [ "live.toggle[13]", "live.toggle", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [  ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

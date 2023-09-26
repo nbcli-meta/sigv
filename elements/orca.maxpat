@@ -5708,7 +5708,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 93.25, 469.0, 158.0, 23.0 ],
-																	"text" : "geo material mat_ambient"
+																	"text" : "model material mat_ambient"
 																}
 
 															}
@@ -5751,12 +5751,13 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-10",
+																	"linecount" : 2,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 72.0, 362.0, 158.0, 37.0 ],
-																	"text" : "geo material mat_emission"
+																	"text" : "model material mat_emission"
 																}
 
 															}
@@ -5792,7 +5793,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 50.0, 251.0, 158.0, 23.0 ],
-																	"text" : "geo material mat_diffuse"
+																	"text" : "model material mat_diffuse"
 																}
 
 															}
@@ -9575,7 +9576,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 566.75, 200.0, 127.75, 23.0 ],
-													"text" : "geo aio ^ 0.05"
+													"text" : "model aio ^ 0.05"
 												}
 
 											}
@@ -9587,7 +9588,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 461.75, 200.0, 79.0, 23.0 ],
-													"text" : "geo aio 1"
+													"text" : "model aio 1"
 												}
 
 											}
@@ -9611,7 +9612,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 261.0, 200.0, 79.0, 23.0 ],
-													"text" : "geo aio 0"
+													"text" : "model aio 0"
 												}
 
 											}
@@ -11600,7 +11601,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 59.5, 609.0, 140.0, 23.0 ],
-													"text" : "geo mesh draw_mode"
+													"text" : "model mesh draw_mode"
 												}
 
 											}
@@ -11678,7 +11679,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 628.0, 204.0, 114.0, 37.0 ],
-													"text" : "geo mesh line_width"
+													"text" : "model mesh line_width"
 												}
 
 											}
@@ -11727,7 +11728,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 494.0, 238.0, 113.0, 37.0 ],
-													"text" : "geo mesh point_size"
+													"text" : "model mesh point_size"
 												}
 
 											}
@@ -11824,7 +11825,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 465.0, 161.0, 137.5, 23.0 ],
-													"text" : "geo mesh poly_mode"
+													"text" : "model mesh poly_mode"
 												}
 
 											}
@@ -13279,24 +13280,26 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-11",
+													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 742.75, 434.0, 105.0, 37.0 ],
-													"text" : "geo anim rotateto"
+													"text" : "model anim rotateto"
 												}
 
 											}
 , 											{
 												"box" : 												{
 													"id" : "obj-10",
+													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 511.75, 379.0, 101.0, 37.0 ],
-													"text" : "geo anim moveto"
+													"text" : "model anim moveto"
 												}
 
 											}
@@ -13308,7 +13311,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 325.5, 366.0, 113.0, 23.0 ],
-													"text" : "geo anim scaleto"
+													"text" : "model anim scaleto"
 												}
 
 											}
@@ -13344,7 +13347,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 213.5, 269.0, 110.0, 23.0 ],
-													"text" : "geo anim turn"
+													"text" : "model anim turn"
 												}
 
 											}
@@ -15051,6 +15054,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-11", 0 ],
 									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-131", 8 ],
+									"source" : [ "obj-17", 7 ]
 								}
 
 							}
@@ -19870,6 +19880,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
