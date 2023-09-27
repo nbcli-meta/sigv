@@ -63,7 +63,7 @@ function js() {
 function aio() {
   $HOME/sigv/nbcli/max/aio "$@" 
   }
-function asl() {
+function aslc() {
   $HOME/sigv/nbcli/max/asl "$@" 
   }
 function b0() {
@@ -229,8 +229,8 @@ function clearbuff() {
 }
 
 ### Scan/Read a file
-function scan() {
-  $HOME/sigv/nbcli/scan "$@"
+function rfi() {
+  $HOME/sigv/nbcli/rfi "$@"
 }
 
 ### Window Title
