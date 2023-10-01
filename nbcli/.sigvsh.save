@@ -48,7 +48,7 @@ function o() {
 }
 
 function h() { 
-  man $1 | grep -- $1 
+  $HOME/sigv/nbcli/max/h "$@" 
   }
 
 ## Reset sigv.js
