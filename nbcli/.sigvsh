@@ -63,8 +63,8 @@ function js() {
 function aio() {
   $HOME/sigv/nbcli/max/aio "$@" 
   }
-function aslc() {
-  $HOME/sigv/nbcli/max/asl "$@" 
+function c() {
+  $HOME/sigv/nbcli/max/c "$@" 
   }
 function b0() {
   $HOME/sigv/nbcli/max/b0 "$@" 

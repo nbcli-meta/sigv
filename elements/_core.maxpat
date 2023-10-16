@@ -1663,7 +1663,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 285.0, 350.0, 100.0, 23.0 ],
-					"text" : "asl",
+					"text" : "aslc",
 					"varname" : "asl"
 				}
 
@@ -1844,8 +1844,12 @@
 			"obj-1::obj-14::obj-56::obj-45" : [ "1 Hysteresis", "Hysteresis", 0 ],
 			"obj-1::obj-14::obj-56::obj-46" : [ "1 Threshold", "Threshold", 0 ],
 			"obj-1::obj-14::obj-56::obj-54" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-1::obj-35" : [ "live.text[5]", "live.text", 0 ],
+			"obj-1::obj-37" : [ "live.toggle[5]", "live.toggle", 0 ],
 			"obj-23::obj-40" : [ "live.text[3]", "live.text", 0 ],
 			"obj-23::obj-41" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-28::obj-3" : [ "live.text[8]", "live.text", 0 ],
+			"obj-28::obj-37" : [ "live.toggle[8]", "live.toggle", 0 ],
 			"obj-2::obj-34" : [ "live.toggle[12]", "live.toggle", 0 ],
 			"obj-2::obj-35" : [ "live.text[12]", "live.text", 0 ],
 			"obj-34" : [ "live.toggle", "live.toggle", 0 ],
@@ -1870,6 +1874,14 @@
 			"parameter_overrides" : 			{
 				"obj-1::obj-14::obj-56::obj-54" : 				{
 					"parameter_longname" : "live.numbox[1]"
+				}
+,
+				"obj-1::obj-35" : 				{
+					"parameter_longname" : "live.text[5]"
+				}
+,
+				"obj-1::obj-37" : 				{
+					"parameter_longname" : "live.toggle[5]"
 				}
 ,
 				"obj-2::obj-34" : 				{
@@ -1901,7 +1913,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "asl.maxpat",
+				"name" : "aslc.maxpat",
 				"bootpath" : "~/sigv/elements",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

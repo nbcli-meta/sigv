@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 164.0, 94.0, 1761.0, 793.0 ],
+		"rect" : [ 287.0, 256.0, 1761.0, 793.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "[ M ] Systems",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 39.0, 451.0, 130.0, 23.0 ],
+					"text" : "jit.matrix @name sigvw"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 292.100000000000023, 555.0, 150.0, 78.0 ],
+					"text" : "Nuit Blanche sigv scale\n\n@size 768 1024 @windowposition 640 128 @dim 768 1024"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-23",
 					"linecount" : 5,
@@ -381,8 +405,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 370.75, 242.0, 105.0, 23.0 ],
-					"text" : "jit.gl.layer"
+					"patching_rect" : [ 370.75, 242.0, 123.0, 23.0 ],
+					"text" : "jit.gl.layer @name film"
 				}
 
 			}
@@ -1706,6 +1730,13 @@
 					"destination" : [ "obj-34", 0 ],
 					"order" : 1,
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
