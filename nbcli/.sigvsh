@@ -11,6 +11,10 @@ omods=$HOME/orca-modules/modules
 ## sigv comps path
 NBCLI=$HOME/sigv/nbcli
 
+
+export RACK_DIR=$HOME/Rack-SDK
+
+
 ## 3D directory
 models=$HOME/_studio/material/3d
 
