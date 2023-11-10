@@ -667,6 +667,18 @@
 								}
 
 							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 0,
+									"patching_rect" : [ 0.0, 0.0, 100.0, 23.0 ],
+									"text" : "midi",
+									"varname" : "midi"
+								}
+
+							}
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
@@ -1682,6 +1694,18 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 0.0, 0.0, 100.0, 23.0 ],
+					"text" : "midi",
+					"varname" : "midi"
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -1827,6 +1851,9 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-16::obj-1::obj-1" : [ "vst~[3]", "vst~", 0 ],
+			"obj-16::obj-1::obj-2" : [ "vst~[4]", "vst~[2]", 0 ],
+			"obj-16::obj-1::obj-9" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"obj-16::obj-34" : [ "live.toggle[17]", "live.toggle", 0 ],
 			"obj-16::obj-35" : [ "live.text[17]", "live.text", 0 ],
 			"obj-1::obj-14" : [ "umenu", "umenu", 0 ],
@@ -1846,6 +1873,9 @@
 			"obj-3::obj-31" : [ "live.toggle[4]", "live.toggle", 0 ],
 			"obj-4::obj-34" : [ "live.toggle[16]", "live.toggle", 0 ],
 			"obj-4::obj-35" : [ "live.text[16]", "live.text", 0 ],
+			"obj-6::obj-1" : [ "vst~", "vst~", 0 ],
+			"obj-6::obj-2" : [ "vst~[2]", "vst~[2]", 0 ],
+			"obj-6::obj-9" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-7::obj-112" : [ "live.toggle[11]", "live.toggle", 0 ],
 			"obj-7::obj-35" : [ "live.text[11]", "live.text", 0 ],
 			"parameterbanks" : 			{
@@ -1858,6 +1888,10 @@
 			}
 ,
 			"parameter_overrides" : 			{
+				"obj-16::obj-1::obj-9" : 				{
+					"parameter_longname" : "live.gain~[1]"
+				}
+,
 				"obj-1::obj-35" : 				{
 					"parameter_longname" : "live.text[5]"
 				}
@@ -1874,6 +1908,11 @@
 					"parameter_longname" : "live.text[12]"
 				}
 ,
+				"obj-6::obj-9" : 				{
+					"parameter_longname" : "live.gain~",
+					"parameter_shortname" : "live.gain~"
+				}
+,
 				"obj-7::obj-112" : 				{
 					"parameter_longname" : "live.toggle[11]"
 				}
@@ -1888,6 +1927,118 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "Darwin.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "London.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "London_20201110.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "London_20201110_1.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "London_20201110_10.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "London_20201110_11.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "London_20201110_12.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "London_20201110_13.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "London_20201110_2.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "London_20201110_3.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "London_20201110_4.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "London_20201110_5.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "London_20201110_6.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "London_20201110_7.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "London_20201110_8.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "London_20201110_9.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "aio.maxpat",
 				"bootpath" : "~/sigv/elements",
 				"patcherrelativepath" : ".",
@@ -1955,6 +2106,13 @@
 				"bootpath" : "~/Desktop/_/o-sigv-dev/Orca-sigv/desktop",
 				"patcherrelativepath" : "../../Desktop/_/o-sigv-dev/Orca-sigv/desktop",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "midi.maxpat",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{

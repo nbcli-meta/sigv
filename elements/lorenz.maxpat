@@ -589,8 +589,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.5, 474.0, 103.0, 37.0 ],
-					"text" : "-19.083883 -0.000218"
+					"patching_rect" : [ 128.5, 474.0, 29.0, 37.0 ],
+					"text" : "0. 0."
 				}
 
 			}
@@ -2966,12 +2966,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-5",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 9,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 23.0, 757.0, 779.0, 23.0 ],
-					"text" : "jit.gl.mesh monde @depth_enable 1 @blend_enable 1 @auto_normals 1 @lighting_enable 1 @animmode local @draw_mode points @color 1 1 1 0.5"
+					"patching_rect" : [ 23.0, 757.0, 862.0, 37.0 ],
+					"text" : "jit.gl.mesh monde @depth_enable 1 @position 0.6 0. 0. @rotatexyz 0 0 -57 @blend_enable 1 @auto_normals 1 @lighting_enable 1 @animmode local @draw_mode points @color 1 1 1 0.5"
 				}
 
 			}

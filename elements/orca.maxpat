@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 18.0, 224.0, 23.0, 23.0 ],
+					"text" : "t b"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -2130,6 +2142,30 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-84",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 488.0, 122.0, 31.0, 23.0 ],
+													"text" : "midi"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-82",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 250.0, 122.0, 31.0, 23.0 ],
+													"text" : "midi"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-81",
 													"maxclass" : "newobj",
 													"numinlets" : 2,
@@ -2656,7 +2692,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 495.0, 122.0, 32.0, 23.0 ],
+													"patching_rect" : [ 452.0, 122.0, 32.0, 23.0 ],
 													"text" : "wrld"
 												}
 
@@ -2668,7 +2704,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 246.0, 122.0, 32.0, 23.0 ],
+													"patching_rect" : [ 215.25, 122.0, 32.0, 23.0 ],
 													"text" : "wrld"
 												}
 
@@ -2940,7 +2976,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 450.0, 122.0, 41.0, 23.0 ],
+													"patching_rect" : [ 409.0, 122.0, 41.0, 23.0 ],
 													"text" : "model"
 												}
 
@@ -2952,7 +2988,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 399.0, 122.0, 34.0, 23.0 ],
+													"patching_rect" : [ 371.0, 122.0, 34.0, 23.0 ],
 													"text" : "terra"
 												}
 
@@ -2964,7 +3000,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 353.0, 122.0, 32.0, 23.0 ],
+													"patching_rect" : [ 337.0, 122.0, 32.0, 23.0 ],
 													"text" : "proc"
 												}
 
@@ -2985,11 +3021,11 @@
 												"box" : 												{
 													"id" : "obj-15",
 													"maxclass" : "newobj",
-													"numinlets" : 8,
-													"numoutlets" : 8,
-													"outlettype" : [ "", "", "", "", "", "", "", "" ],
-													"patching_rect" : [ 304.0, 84.0, 223.0, 23.0 ],
-													"text" : "route 0 1 2 3 4 5 6"
+													"numinlets" : 9,
+													"numoutlets" : 9,
+													"outlettype" : [ "", "", "", "", "", "", "", "", "" ],
+													"patching_rect" : [ 304.0, 84.0, 220.0, 23.0 ],
+													"text" : "route 0 1 2 3 4 5 6 7"
 												}
 
 											}
@@ -3060,7 +3096,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 196.0, 122.0, 41.0, 23.0 ],
+													"patching_rect" : [ 168.5, 122.0, 41.0, 23.0 ],
 													"text" : "model"
 												}
 
@@ -3072,7 +3108,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 145.0, 122.0, 34.0, 23.0 ],
+													"patching_rect" : [ 127.0, 122.0, 34.0, 23.0 ],
 													"text" : "terra"
 												}
 
@@ -3084,7 +3120,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 99.0, 122.0, 32.0, 23.0 ],
+													"patching_rect" : [ 89.0, 122.0, 32.0, 23.0 ],
 													"text" : "proc"
 												}
 
@@ -3105,11 +3141,11 @@
 												"box" : 												{
 													"id" : "obj-2",
 													"maxclass" : "newobj",
-													"numinlets" : 8,
-													"numoutlets" : 8,
-													"outlettype" : [ "", "", "", "", "", "", "", "" ],
-													"patching_rect" : [ 50.0, 84.0, 228.0, 23.0 ],
-													"text" : "route 0 1 2 3 4 5 6"
+													"numinlets" : 9,
+													"numoutlets" : 9,
+													"outlettype" : [ "", "", "", "", "", "", "", "", "" ],
+													"patching_rect" : [ 50.0, 84.0, 241.0, 23.0 ],
+													"text" : "route 0 1 2 3 4 5 6 7"
 												}
 
 											}
@@ -3229,6 +3265,13 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-84", 0 ],
+													"source" : [ "obj-15", 7 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-9", 0 ],
 													"source" : [ "obj-15", 2 ]
 												}
@@ -3326,6 +3369,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-79", 0 ],
 													"source" : [ "obj-2", 6 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-82", 0 ],
+													"source" : [ "obj-2", 7 ]
 												}
 
 											}
@@ -3953,8 +4003,31 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-13", 0 ],
+													"order" : 1,
+													"source" : [ "obj-82", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-44", 0 ],
+													"order" : 0,
+													"source" : [ "obj-82", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-7", 0 ],
 													"source" : [ "obj-83", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-21", 0 ],
+													"source" : [ "obj-84", 0 ]
 												}
 
 											}
@@ -9210,7 +9283,7 @@
 								"box" : 								{
 									"id" : "obj-131",
 									"maxclass" : "newobj",
-									"numinlets" : 9,
+									"numinlets" : 11,
 									"numoutlets" : 0,
 									"patcher" : 									{
 										"fileversion" : 1,
@@ -9223,7 +9296,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 112.0, 381.0, 1229.0, 413.0 ],
+										"rect" : [ 112.0, 381.0, 1229.0, 582.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -9252,6 +9325,359 @@
 										"subpatcher_template" : "sigv.js",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-61",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 1052.0, 345.0, 86.0, 23.0 ],
+													"text" : "midi vst2 open"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-58",
+													"maxclass" : "newobj",
+													"numinlets" : 3,
+													"numoutlets" : 3,
+													"outlettype" : [ "", "", "" ],
+													"patching_rect" : [ 1033.0, 278.0, 57.0, 23.0 ],
+													"text" : "route 1 2"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-56",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 1033.0, 314.0, 86.0, 23.0 ],
+													"text" : "midi vst1 open"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-55",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 556.5, 145.0, 57.0, 23.0 ],
+													"text" : "aio pwr 1"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-54",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 520.5, 120.0, 57.0, 23.0 ],
+													"text" : "aio pwr 0"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-45",
+													"maxclass" : "newobj",
+													"numinlets" : 3,
+													"numoutlets" : 3,
+													"outlettype" : [ "", "", "" ],
+													"patching_rect" : [ 520.5, 91.0, 57.0, 23.0 ],
+													"text" : "route 0 1"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-43",
+													"index" : 11,
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 650.0, 40.0, 30.0, 30.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-77",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 1022.0, 409.0, 165.0, 23.0 ],
+													"text" : "midi vst1 plug Hadron"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-73",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 746.5, 509.0, 78.0, 23.0 ],
+													"text" : "prepend plug"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-74",
+													"maxclass" : "number",
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "bang" ],
+													"parameter_enable" : 0,
+													"patching_rect" : [ 739.0, 409.0, 50.0, 23.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-75",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 691.0, 434.0, 94.0, 23.0 ],
+													"text" : "prepend append"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-76",
+													"items" : [ "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)" ],
+													"maxclass" : "umenu",
+													"numinlets" : 1,
+													"numoutlets" : 3,
+													"outlettype" : [ "int", "", "" ],
+													"parameter_enable" : 0,
+													"patching_rect" : [ 691.0, 470.0, 130.0, 23.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-72",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 955.25, 405.0, 53.0, 23.0 ],
+													"text" : "zl.ecils 1"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-71",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 947.5, 345.0, 53.0, 23.0 ],
+													"text" : "zl.ecils 1"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-70",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 843.0, 345.0, 29.5, 23.0 ],
+													"text" : "join"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-69",
+													"linecount" : 2,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 843.0, 464.0, 165.0, 37.0 ],
+													"text" : "midi vst2 plug \"Gladstone (Drum)\""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-66",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 862.0, 420.0, 29.5, 23.0 ],
+													"text" : "join"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-63",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 862.0, 380.0, 103.0, 23.0 ],
+													"text" : "prepend midi vst2"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-60",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 859.0, 314.0, 103.0, 23.0 ],
+													"text" : "prepend midi vst1"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-59",
+													"maxclass" : "newobj",
+													"numinlets" : 4,
+													"numoutlets" : 4,
+													"outlettype" : [ "", "", "", "" ],
+													"patching_rect" : [ 843.0, 285.0, 67.0, 23.0 ],
+													"text" : "route 0 1 2"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-53",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 746.5, 360.0, 78.0, 23.0 ],
+													"text" : "prepend plug"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-52",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "bang" ],
+													"patching_rect" : [ 597.0, 269.0, 56.0, 23.0 ],
+													"text" : "loadbang"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-51",
+													"maxclass" : "number",
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "bang" ],
+													"parameter_enable" : 0,
+													"patching_rect" : [ 739.0, 260.0, 50.0, 23.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-49",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 597.0, 354.0, 83.0, 23.0 ],
+													"text" : "route plug_vst"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-48",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 691.0, 285.0, 94.0, 23.0 ],
+													"text" : "prepend append"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-47",
+													"items" : [ "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)" ],
+													"maxclass" : "umenu",
+													"numinlets" : 1,
+													"numoutlets" : 3,
+													"outlettype" : [ "int", "", "" ],
+													"parameter_enable" : 0,
+													"patching_rect" : [ 691.0, 321.0, 130.0, 23.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-46",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 597.0, 327.0, 48.0, 23.0 ],
+													"text" : "vstscan"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-44",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 597.0, 297.0, 39.0, 23.0 ],
+													"text" : "listvst"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-39",
+													"index" : 9,
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 566.0, 40.0, 30.0, 30.0 ]
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-42",
 													"maxclass" : "message",
@@ -9303,7 +9729,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-16",
-													"index" : 9,
+													"index" : 10,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -10144,6 +10570,13 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-59", 0 ],
+													"source" : [ "obj-39", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-15", 0 ],
 													"source" : [ "obj-4", 0 ]
 												}
@@ -10179,6 +10612,71 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-45", 0 ],
+													"source" : [ "obj-43", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-46", 0 ],
+													"source" : [ "obj-44", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-54", 0 ],
+													"source" : [ "obj-45", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-55", 0 ],
+													"source" : [ "obj-45", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-49", 0 ],
+													"source" : [ "obj-46", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-53", 0 ],
+													"source" : [ "obj-47", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-47", 0 ],
+													"source" : [ "obj-48", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-48", 0 ],
+													"order" : 1,
+													"source" : [ "obj-49", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-75", 0 ],
+													"order" : 0,
+													"source" : [ "obj-49", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-15", 1 ],
 													"source" : [ "obj-5", 0 ]
 												}
@@ -10186,8 +10684,106 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-47", 0 ],
+													"source" : [ "obj-51", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-44", 0 ],
+													"source" : [ "obj-52", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-70", 1 ],
+													"source" : [ "obj-53", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-21", 0 ],
+													"source" : [ "obj-54", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-21", 0 ],
+													"source" : [ "obj-55", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-21", 0 ],
+													"source" : [ "obj-56", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-56", 0 ],
+													"source" : [ "obj-58", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-61", 0 ],
+													"source" : [ "obj-58", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-58", 0 ],
+													"source" : [ "obj-59", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-60", 0 ],
+													"source" : [ "obj-59", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-63", 0 ],
+													"source" : [ "obj-59", 2 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-22", 1 ],
 													"source" : [ "obj-6", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-71", 0 ],
+													"source" : [ "obj-60", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-21", 0 ],
+													"source" : [ "obj-61", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-72", 0 ],
+													"source" : [ "obj-63", 0 ]
 												}
 
 											}
@@ -10208,6 +10804,22 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-21", 0 ],
+													"order" : 1,
+													"source" : [ "obj-66", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-69", 1 ],
+													"order" : 0,
+													"source" : [ "obj-66", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-21", 0 ],
 													"source" : [ "obj-67", 0 ]
 												}
 
@@ -10216,6 +10828,78 @@
 												"patchline" : 												{
 													"destination" : [ "obj-14", 0 ],
 													"source" : [ "obj-7", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-21", 0 ],
+													"order" : 1,
+													"source" : [ "obj-70", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-77", 1 ],
+													"order" : 0,
+													"source" : [ "obj-70", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-51", 0 ],
+													"source" : [ "obj-71", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-70", 0 ],
+													"source" : [ "obj-71", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-66", 0 ],
+													"source" : [ "obj-72", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-74", 0 ],
+													"source" : [ "obj-72", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-66", 1 ],
+													"source" : [ "obj-73", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-76", 0 ],
+													"source" : [ "obj-74", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-76", 0 ],
+													"source" : [ "obj-75", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-73", 0 ],
+													"source" : [ "obj-76", 1 ]
 												}
 
 											}
@@ -10433,7 +11117,7 @@
 										"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ]
 									}
 ,
-									"patching_rect" : [ 827.0, 120.0, 106.000000000000114, 23.0 ],
+									"patching_rect" : [ 827.0, 120.0, 130.999999999999773, 23.0 ],
 									"saved_object_attributes" : 									{
 										"accentcolor" : [ 0.07799056917429, 0.098447218537331, 0.10713404417038, 1.0 ],
 										"bgcolor" : [ 0.070588235294118, 0.105882352941176, 0.164705882352941, 1.0 ],
@@ -14807,11 +15491,11 @@
 								"box" : 								{
 									"id" : "obj-17",
 									"maxclass" : "newobj",
-									"numinlets" : 9,
-									"numoutlets" : 9,
-									"outlettype" : [ "", "", "", "", "", "", "", "", "" ],
-									"patching_rect" : [ 827.0, 84.0, 112.0, 23.0 ],
-									"text" : "route p l o m x q b s"
+									"numinlets" : 11,
+									"numoutlets" : 11,
+									"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "" ],
+									"patching_rect" : [ 827.0, 84.0, 131.0, 23.0 ],
+									"text" : "route p l o m x q b v s 1"
 								}
 
 							}
@@ -15054,6 +15738,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-11", 0 ],
 									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-131", 10 ],
+									"source" : [ "obj-17", 9 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-131", 9 ],
+									"source" : [ "obj-17", 8 ]
 								}
 
 							}
@@ -16324,6 +17022,10 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"patching_rect" : [ 50.0, 255.0, 32.0, 23.0 ],
+													"saved_object_attributes" : 													{
+														"shell" : "(default)"
+													}
+,
 													"text" : "shell"
 												}
 
@@ -16665,6 +17367,10 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"patching_rect" : [ 20.0, 139.0, 32.0, 23.0 ],
+													"saved_object_attributes" : 													{
+														"shell" : "(default)"
+													}
+,
 													"text" : "shell"
 												}
 
@@ -17032,6 +17738,10 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"patching_rect" : [ 50.0, 255.0, 32.0, 23.0 ],
+													"saved_object_attributes" : 													{
+														"shell" : "(default)"
+													}
+,
 													"text" : "shell"
 												}
 
@@ -17349,6 +18059,10 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"patching_rect" : [ 20.0, 118.0, 32.0, 23.0 ],
+													"saved_object_attributes" : 													{
+														"shell" : "(default)"
+													}
+,
 													"text" : "shell"
 												}
 
@@ -20086,6 +20800,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-41", 2 ],
 					"source" : [ "obj-25", 0 ]
 				}
@@ -20131,7 +20852,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -20283,6 +21004,71 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-18::obj-26" : [ "live.text[2]", "live.text", 0 ],
+			"obj-18::obj-5" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-26" : [ "live.text[4]", "live.text", 0 ],
+			"obj-31" : [ "live.toggle[4]", "live.toggle", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "e.txt",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "func.txt",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gs.txt",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gs1.txt",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gs2.txt",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "main.js",
+				"bootpath" : "~/Desktop/_/o-sigv-dev/Orca-sigv/desktop",
+				"patcherrelativepath" : "../../Desktop/_/o-sigv-dev/Orca-sigv/desktop",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

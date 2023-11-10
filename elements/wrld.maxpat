@@ -1470,8 +1470,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "bang", "" ],
-					"patching_rect" : [ 69.0, 270.0, 732.0, 23.0 ],
-					"text" : "jit.world sigv @fsmenubar 0 @visible 1 @enable 1 @erase_color 0 0 0 1 @size 2048 1280 @windowposition 0 0 @dim 1920 1080 @fsaa 1",
+					"patching_rect" : [ 69.0, 270.0, 752.0, 23.0 ],
+					"text" : "jit.world sigv @fsmenubar 0 @visible 1 @enable 1 @erase_color 0 0 0 1 @size 1152 720 @windowposition 448 280 @dim 1920 1080 @fsaa 1",
 					"varname" : "wrld"
 				}
 
@@ -1669,6 +1669,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-14", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-14", 2 ]
 				}
@@ -1743,7 +1750,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 435.0, 307.0, 326.600000000000023, 307.0 ],
+					"midpoints" : [ 445.0, 307.0, 326.600000000000023, 307.0 ],
 					"source" : [ "obj-2", 1 ]
 				}
 

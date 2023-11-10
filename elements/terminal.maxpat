@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 5,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 672.0, 331.0, 232.0, 338.0 ],
+		"rect" : [ 1694.0, 597.0, 232.0, 338.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 90.541666666666629, 212.0, 71.0, 23.0 ],
+					"patching_rect" : [ 50.541666666666629, 200.0, 71.0, 23.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -104,7 +104,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 20.041666666666629, 237.0, 69.0, 23.0 ],
+					"patching_rect" : [ 20.041666666666629, 237.0, 62.0, 23.0 ],
 					"text" : "shell"
 				}
 
@@ -181,6 +181,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
