@@ -632,7 +632,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 753.0, 444.0, 444.0, 557.0 ],
+										"rect" : [ 458.0, 167.0, 483.0, 608.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -662,6 +662,96 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-32",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 343.0, 184.0, 77.0, 23.0 ],
+													"text" : "route symbol"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-33",
+													"linecount" : 4,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 385.0, 80.0, 98.0, 66.0 ],
+													"text" : "read /Users/magfoto/sigv/elements/bmesh.txt"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-31",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "bang" ],
+													"patching_rect" : [ 339.0, 36.0, 56.0, 23.0 ],
+													"text" : "loadbang"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-26",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 4,
+													"outlettype" : [ "", "", "", "" ],
+													"patching_rect" : [ 344.0, 152.0, 64.0, 23.0 ],
+													"saved_object_attributes" : 													{
+														"embed" : 0,
+														"precision" : 6
+													}
+,
+													"text" : "coll bmesh"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-30",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 22.0, 481.0, 57.5, 23.0 ],
+													"text" : "join"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-28",
+													"maxclass" : "newobj",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 145.5, 20.0, 44.0, 23.0 ],
+													"text" : "r focus"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-27",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 22.0, 427.0, 127.0, 23.0 ],
+													"text" : "append read"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-24",
 													"maxclass" : "button",
 													"numinlets" : 1,
@@ -675,12 +765,13 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-25",
+													"linecount" : 3,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 283.5, 510.0, 137.0, 23.0 ],
-													"text" : "model read botaniq3.fbx"
+													"patching_rect" : [ 283.5, 510.0, 173.0, 52.0 ],
+													"text" : "model read $models/../biomes/botaniq3.fbx"
 												}
 
 											}
@@ -699,12 +790,13 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-23",
+													"linecount" : 3,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 283.5, 433.0, 137.0, 23.0 ],
-													"text" : "model read botaniq2.fbx"
+													"patching_rect" : [ 283.5, 433.0, 160.0, 52.0 ],
+													"text" : "model read $models/../biomes/botaniq2.fbx"
 												}
 
 											}
@@ -723,12 +815,13 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-21",
+													"linecount" : 3,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 283.5, 368.0, 137.0, 23.0 ],
-													"text" : "model read botaniq1.fbx"
+													"patching_rect" : [ 283.5, 368.0, 160.0, 52.0 ],
+													"text" : "model read $models/../biomes/botaniq1.fbx"
 												}
 
 											}
@@ -751,20 +844,21 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 145.5, 374.0, 116.0, 23.0 ],
-													"text" : "model read ferns.fbx"
+													"patching_rect" : [ 145.5, 374.0, 221.0, 23.0 ],
+													"text" : "model read $models/../biomes/ferns.fbx"
 												}
 
 											}
 , 											{
 												"box" : 												{
 													"id" : "obj-15",
+													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 219.5, 289.0, 155.0, 23.0 ],
-													"text" : "model read flower-bed2.fbx"
+													"patching_rect" : [ 219.5, 289.0, 197.0, 37.0 ],
+													"text" : "model read $models/../biomes/flower-bed2.fbx"
 												}
 
 											}
@@ -783,12 +877,13 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-13",
+													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 195.5, 227.0, 148.0, 23.0 ],
-													"text" : "model read flower-bed.fbx"
+													"patching_rect" : [ 195.5, 227.0, 190.0, 37.0 ],
+													"text" : "model read $models/../biomes/flower-bed.fbx"
 												}
 
 											}
@@ -811,8 +906,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 169.5, 167.0, 138.0, 23.0 ],
-													"text" : "model read rockplain.fbx"
+													"patching_rect" : [ 169.5, 167.0, 130.0, 23.0 ],
+													"text" : "../biomes/rockplain.fbx"
 												}
 
 											}
@@ -835,8 +930,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 85.5, 289.0, 167.0, 23.0 ],
-													"text" : "model read outskirt-ravine.fbx"
+													"patching_rect" : [ 61.5, 270.0, 271.0, 23.0 ],
+													"text" : "model read $models/../biomes/outskirt-ravine.fbx"
 												}
 
 											}
@@ -859,8 +954,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 45.5, 227.0, 171.0, 23.0 ],
-													"text" : "model read private-botaniq.fbx"
+													"patching_rect" : [ 61.5, 202.0, 275.0, 23.0 ],
+													"text" : "model read $models/../biomes/private-botaniq.fbx"
 												}
 
 											}
@@ -883,8 +978,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 22.0, 167.0, 158.0, 23.0 ],
-													"text" : "model read fleurs-jaunes.fbx"
+													"patching_rect" : [ 22.0, 167.0, 150.0, 23.0 ],
+													"text" : "../biomes/fleurs-jaunes.fbx"
 												}
 
 											}
@@ -906,20 +1001,8 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 21.0, 391.0, 42.0, 23.0 ],
+													"patching_rect" : [ 22.0, 521.0, 42.0, 23.0 ],
 													"text" : "s coda"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-19",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 21.0, 343.0, 71.0, 23.0 ],
-													"text" : "fromsymbol"
 												}
 
 											}
@@ -930,8 +1013,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 21.0, 315.0, 57.0, 23.0 ],
-													"text" : "tosymbol"
+													"patching_rect" : [ 21.0, 315.0, 71.0, 23.0 ],
+													"text" : "fromsymbol"
 												}
 
 											}
@@ -963,7 +1046,7 @@
  ],
 										"lines" : [ 											{
 												"patchline" : 												{
-													"destination" : [ "obj-2", 0 ],
+													"destination" : [ "obj-26", 0 ],
 													"source" : [ "obj-1", 0 ]
 												}
 
@@ -977,22 +1060,8 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-18", 0 ],
-													"source" : [ "obj-11", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-11", 0 ],
 													"source" : [ "obj-12", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-18", 0 ],
-													"source" : [ "obj-13", 0 ]
 												}
 
 											}
@@ -1005,13 +1074,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-18", 0 ],
-													"source" : [ "obj-15", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-15", 0 ],
 													"source" : [ "obj-16", 0 ]
 												}
@@ -1019,15 +1081,8 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-19", 0 ],
+													"destination" : [ "obj-30", 1 ],
 													"source" : [ "obj-18", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-20", 0 ],
-													"source" : [ "obj-19", 0 ]
 												}
 
 											}
@@ -1103,22 +1158,8 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-18", 0 ],
-													"source" : [ "obj-21", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-23", 0 ],
 													"source" : [ "obj-22", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-18", 0 ],
-													"source" : [ "obj-23", 0 ]
 												}
 
 											}
@@ -1131,8 +1172,50 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-32", 0 ],
+													"source" : [ "obj-26", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-30", 0 ],
+													"source" : [ "obj-27", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-27", 0 ],
+													"source" : [ "obj-28", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-20", 0 ],
+													"source" : [ "obj-30", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-33", 0 ],
+													"source" : [ "obj-31", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-18", 0 ],
-													"source" : [ "obj-3", 0 ]
+													"source" : [ "obj-32", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-26", 0 ],
+													"source" : [ "obj-33", 0 ]
 												}
 
 											}
@@ -1152,29 +1235,8 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-18", 0 ],
-													"source" : [ "obj-6", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-18", 0 ],
-													"source" : [ "obj-7", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-7", 0 ],
 													"source" : [ "obj-8", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-18", 0 ],
-													"source" : [ "obj-9", 0 ]
 												}
 
 											}
@@ -2142,6 +2204,150 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-95",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 393.5, 217.0, 54.0, 23.0 ],
+													"text" : "route 22"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-87",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 409.0, 267.0, 29.5, 23.0 ],
+													"text" : "b"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-90",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "bang" ],
+													"patching_rect" : [ 409.0, 242.0, 23.0, 23.0 ],
+													"text" : "t b"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-92",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 409.0, 330.0, 71.0, 23.0 ],
+													"text" : "fromsymbol"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-93",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 401.0, 367.0, 84.0, 23.0 ],
+													"text" : "b0"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-94",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 409.0, 305.0, 65.0, 23.0 ],
+													"text" : "combine i i"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-101",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 268.0, 313.0, 29.5, 23.0 ],
+													"text" : "b"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-99",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "bang" ],
+													"patching_rect" : [ 268.0, 288.0, 23.0, 23.0 ],
+													"text" : "t b"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-98",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 268.0, 376.0, 71.0, 23.0 ],
+													"text" : "fromsymbol"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-91",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 260.0, 413.0, 84.0, 23.0 ],
+													"text" : "b0"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-89",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 268.0, 351.0, 65.0, 23.0 ],
+													"text" : "combine i i"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-88",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 227.0, 195.0, 54.0, 23.0 ],
+													"text" : "route 22"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-84",
 													"maxclass" : "message",
 													"numinlets" : 2,
@@ -2802,7 +3008,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 4,
 													"outlettype" : [ "", "", "", "" ],
-													"patching_rect" : [ 196.0, 261.0, 70.5, 23.0 ],
+													"patching_rect" : [ 79.0, 351.0, 70.5, 23.0 ],
 													"saved_object_attributes" : 													{
 														"embed" : 0,
 														"precision" : 6
@@ -2976,7 +3182,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 409.0, 122.0, 41.0, 23.0 ],
+													"patching_rect" : [ 364.0, 267.0, 41.0, 23.0 ],
 													"text" : "model"
 												}
 
@@ -3096,7 +3302,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 168.5, 122.0, 41.0, 23.0 ],
+													"patching_rect" : [ 227.0, 232.0, 41.0, 23.0 ],
 													"text" : "model"
 												}
 
@@ -3202,6 +3408,13 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-89", 0 ],
+													"source" : [ "obj-101", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-21", 0 ],
 													"source" : [ "obj-12", 0 ]
 												}
@@ -3258,13 +3471,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-8", 0 ],
-													"source" : [ "obj-15", 3 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-84", 0 ],
 													"source" : [ "obj-15", 7 ]
 												}
@@ -3274,6 +3480,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-9", 0 ],
 													"source" : [ "obj-15", 2 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-95", 0 ],
+													"source" : [ "obj-15", 3 ]
 												}
 
 											}
@@ -3332,13 +3545,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-17", 0 ],
-													"source" : [ "obj-2", 3 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-4", 0 ],
 													"source" : [ "obj-2", 0 ]
 												}
@@ -3376,6 +3582,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-82", 0 ],
 													"source" : [ "obj-2", 7 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-88", 0 ],
+													"source" : [ "obj-2", 3 ]
 												}
 
 											}
@@ -3596,7 +3809,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-26", 0 ],
-													"order" : 0,
+													"order" : 1,
 													"source" : [ "obj-44", 0 ]
 												}
 
@@ -3604,7 +3817,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-45", 0 ],
-													"order" : 1,
+													"order" : 0,
 													"source" : [ "obj-44", 0 ]
 												}
 
@@ -4054,8 +4267,111 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-94", 0 ],
+													"source" : [ "obj-87", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-17", 0 ],
+													"source" : [ "obj-88", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-89", 1 ],
+													"order" : 0,
+													"source" : [ "obj-88", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-99", 0 ],
+													"order" : 1,
+													"source" : [ "obj-88", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-98", 0 ],
+													"source" : [ "obj-89", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-21", 0 ],
 													"source" : [ "obj-9", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-87", 0 ],
+													"source" : [ "obj-90", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-93", 1 ],
+													"source" : [ "obj-92", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-92", 0 ],
+													"source" : [ "obj-94", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-8", 0 ],
+													"source" : [ "obj-95", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-90", 0 ],
+													"source" : [ "obj-95", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-13", 0 ],
+													"order" : 2,
+													"source" : [ "obj-98", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-44", 0 ],
+													"order" : 1,
+													"source" : [ "obj-98", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-91", 1 ],
+													"order" : 0,
+													"source" : [ "obj-98", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-101", 0 ],
+													"source" : [ "obj-99", 0 ]
 												}
 
 											}
@@ -5781,7 +6097,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 93.25, 469.0, 158.0, 23.0 ],
-																	"text" : "model material mat_ambient"
+																	"text" : "b0 material mat_ambient"
 																}
 
 															}
@@ -5824,13 +6140,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-10",
-																	"linecount" : 2,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 72.0, 362.0, 158.0, 37.0 ],
-																	"text" : "model material mat_emission"
+																	"text" : "b0 material mat_emission"
 																}
 
 															}
@@ -5866,7 +6181,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 50.0, 251.0, 158.0, 23.0 ],
-																	"text" : "model material mat_diffuse"
+																	"text" : "b0 material mat_diffuse"
 																}
 
 															}
@@ -9460,7 +9775,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-76",
-													"items" : [ "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)" ],
+													"items" : [ "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -9630,7 +9945,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-47",
-													"items" : [ "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)" ],
+													"items" : [ "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)", ",", "Abu Dhabi (Slicer)", ",", "Alexandria (Organ)", ",", "Amsterdam (SFX)", ",", "BabyComeback", ",", "Berlin (Sync)", ",", "Bilbao (Sampler)", ",", "Brussels (Lead)", ",", "CardinalFX", ",", "CardinalSynth", ",", "Chiangmai (FM)", ",", "Chicago (Acid)", ",", "Darwin (M1)", ",", "Dublin (Semi-modular)", ",", "Durban (B.Amp)", ",", "Ebina (Taito)", ",", "Fairbanks (Hybrid)", ",", "Firenze (Clav)", ",", "FL Studio VSTi", ",", "Gladstone (Drum)", ",", "Glasgow (Keys)", ",", "Guitar Rig 6", ",", "Hadron", ",", "Helsinki (Pad)", ",", "Kamata (4-Bit)", ",", "Kiev (Vector)", ",", "Kingston (Arcade)", ",", "Komplete Kontrol", ",", "Kontakt", ",", "Lexington (Odyssey)", ",", "Lisbon (Sci-Fi)", ",", "London (Drum)", ",", "Madrid (Bass)", ",", "MagicDice", ",", "MagicSwitch", ",", "Marseille (Keys)", ",", "Massive X", ",", "Memphis (MS-20)", ",", "Miami (Wobble)", ",", "Milpitas (Wavestation)", ",", "Montpellier (Mono&#47;Poly)", ",", "Montreal (E.Piano)", ",", "Otorii (SEGA)", ",", "Phoenix (Analog)", ",", "PitchDrift", ",", "Pompei (Polysix)", ",", "Reaktor 6 FX", ",", "Reaktor 6", ",", "Recife (Drum)", ",", "Rosario (G.Amp)", ",", "RX 8 Breath Control", ",", "RX 8 Connect", ",", "RX 8 De-click", ",", "RX 8 De-clip", ",", "RX 8 De-crackle", ",", "RX 8 De-ess", ",", "RX 8 De-hum", ",", "RX 8 De-plosive", ",", "RX 8 De-reverb", ",", "RX 8 Guitar De-noise", ",", "RX 8 Monitor", ",", "RX 8 Mouth De-click", ",", "RX 8 Spectral De-noise", ",", "RX 8 Voice De-noise", ",", "Salzburg (Piano)", ",", "SonoBus", ",", "Stockholm (Dr. Octorex)", ",", "Supercharger", ",", "Taipei (Midi)", ",", "Thesys", ",", "Tokyo (E.Perc)", ",", "Vancouver (Sample)", ",", "Vital", ",", "Warszawa (Wavetable)", ",", "Wavetable", ",", "Wolfsburg (Digital)", ",", "Zurich (Recorder)" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -10002,7 +10317,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 566.75, 200.0, 127.75, 23.0 ],
-													"text" : "model aio ^ 0.05"
+													"text" : "b0 aio ^ 0.05"
 												}
 
 											}
@@ -10014,7 +10329,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 461.75, 200.0, 79.0, 23.0 ],
-													"text" : "model aio 1"
+													"text" : "b0 aio 1"
 												}
 
 											}
@@ -10038,7 +10353,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 261.0, 200.0, 79.0, 23.0 ],
-													"text" : "model aio 0"
+													"text" : "b0 aio 0"
 												}
 
 											}
@@ -12285,7 +12600,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 59.5, 609.0, 140.0, 23.0 ],
-													"text" : "model mesh draw_mode"
+													"text" : "b0 mesh draw_mode"
 												}
 
 											}
@@ -12357,13 +12672,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-25",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 628.0, 204.0, 114.0, 37.0 ],
-													"text" : "model mesh line_width"
+													"text" : "b0 mesh line_width"
 												}
 
 											}
@@ -12406,13 +12720,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-11",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 494.0, 238.0, 113.0, 37.0 ],
-													"text" : "model mesh point_size"
+													"text" : "b0 mesh point_size"
 												}
 
 											}
@@ -12509,7 +12822,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 465.0, 161.0, 137.5, 23.0 ],
-													"text" : "model mesh poly_mode"
+													"text" : "b0 mesh poly_mode"
 												}
 
 											}
@@ -13964,26 +14277,24 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-11",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 742.75, 434.0, 105.0, 37.0 ],
-													"text" : "model anim rotateto"
+													"text" : "b0 anim rotateto"
 												}
 
 											}
 , 											{
 												"box" : 												{
 													"id" : "obj-10",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 511.75, 379.0, 101.0, 37.0 ],
-													"text" : "model anim moveto"
+													"text" : "b0 anim moveto"
 												}
 
 											}
@@ -13995,7 +14306,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 325.5, 366.0, 113.0, 23.0 ],
-													"text" : "model anim scaleto"
+													"text" : "b0 anim scaleto"
 												}
 
 											}
@@ -14031,7 +14342,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 213.5, 269.0, 110.0, 23.0 ],
-													"text" : "model anim turn"
+													"text" : "b0 anim turn"
 												}
 
 											}
@@ -21004,71 +21315,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-18::obj-26" : [ "live.text[2]", "live.text", 0 ],
-			"obj-18::obj-5" : [ "live.toggle[2]", "live.toggle", 0 ],
-			"obj-26" : [ "live.text[4]", "live.text", 0 ],
-			"obj-31" : [ "live.toggle[4]", "live.toggle", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "e.txt",
-				"bootpath" : "~/sigv/elements",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "func.txt",
-				"bootpath" : "~/sigv/elements",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "gs.txt",
-				"bootpath" : "~/sigv/elements",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "gs1.txt",
-				"bootpath" : "~/sigv/elements",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "gs2.txt",
-				"bootpath" : "~/sigv/elements",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "main.js",
-				"bootpath" : "~/Desktop/_/o-sigv-dev/Orca-sigv/desktop",
-				"patcherrelativepath" : "../../Desktop/_/o-sigv-dev/Orca-sigv/desktop",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "shell.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

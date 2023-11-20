@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-49",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 613.0, 500.0, 150.0, 64.0 ],
+					"text" : "mqtt mqtt://magfoto:e7baZhZ6ykkkjJYi@magfoto.cloud.shiftr.io sigv"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 613.0, 409.0, 150.0, 78.0 ],
+					"text" : "configure mqtt://ndstudiolabmtf:ifQ7ARK4TBQPAs8i@ndstudiolabmtf.cloud.shiftr.io QuasiNode1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-18",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -973,7 +997,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 65.0, 464.0, 255.0, 23.0 ],
-					"text" : "proc mesh point_size 3.5"
+					"text" : "shiftr connect"
 				}
 
 			}
@@ -1518,8 +1542,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "list" ],
-					"patching_rect" : [ 306.166666666666629, 81.0, 368.0, 23.0 ],
-					"text" : "mqtt mqtt://magfoto:e7baZhZ6ykkkjJYi@magfoto.cloud.shiftr.io sigv"
+					"patching_rect" : [ 306.166666666666629, 81.0, 451.0, 23.0 ],
+					"text" : "mqtt mqtt://ndstudiolabmtf:ifQ7ARK4TBQPAs8i@ndstudiolabmtf.cloud.shiftr.io sigv"
 				}
 
 			}
@@ -2025,6 +2049,27 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-34" : [ "live.toggle[16]", "live.toggle", 0 ],
+			"obj-35" : [ "live.text[16]", "live.text", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "mqtt.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
