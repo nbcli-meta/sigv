@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 130.0, 265.0, 33.0, 23.0 ],
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -77,12 +88,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-13",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.541666666666629, 88.0, 153.0, 23.0 ],
-					"text" : "/Users/magfoto/sigv/nbcli/"
+					"patching_rect" : [ 50.541666666666629, 88.0, 175.0, 37.0 ],
+					"text" : "/Users/magfoto/sigv/elements/nbcli/"
 				}
 
 			}
@@ -105,6 +117,10 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 20.041666666666629, 237.0, 62.0, 23.0 ],
+					"saved_object_attributes" : 					{
+						"shell" : "(default)"
+					}
+,
 					"text" : "shell"
 				}
 
@@ -173,7 +189,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"order" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
+					"order" : 1,
 					"source" : [ "obj-3", 0 ]
 				}
 

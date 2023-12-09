@@ -2397,18 +2397,6 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"id" : "obj-54",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 100.0, 23.0 ],
-					"text" : "geo",
-					"varname" : "geo"
-				}
-
-			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1701.0, 1119.0, 303.0, 130.0 ],
+		"rect" : [ 1701.0, 1119.0, 303.0, 92.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -48,7 +48,7 @@
 					"patching_rect" : [ 120.0, 318.0, 90.0, 23.0 ],
 					"saved_object_attributes" : 					{
 						"allwindowsactive" : 0,
-						"appicon_mac" : "Macintosh HD:/Users/magfoto/Desktop/nbcli-nota/Max.icns",
+						"appicon_mac" : "Macintosh HD:/Users/magfoto/Desktop/nbcli-nota/sigv.icns",
 						"appicon_win" : "",
 						"audiosupport" : 1,
 						"bundleidentifier" : "com.sigv.lca",
@@ -122,7 +122,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 409.0, 104.0, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 47.0, 101.0, 44.0, 15.0 ],
+					"presentation_rect" : [ 47.0, 61.0, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
 							"expression" : ""
@@ -160,7 +160,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 357.0, 85.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 26.0, 101.0, 15.0, 15.0 ],
+					"presentation_rect" : [ 26.0, 61.0, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
 							"expression" : ""
@@ -277,7 +277,7 @@
 					"outlettype" : [ "float", "int" ],
 					"patching_rect" : [ 23.5, 249.0, 100.0, 5.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 174.0, 106.0, 100.0, 5.0 ]
+					"presentation_rect" : [ 26.0, 52.0, 100.0, 5.0 ]
 				}
 
 			}
@@ -798,7 +798,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 18.5, 158.0, 261.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 26.0, 14.0, 248.0, 62.0 ],
+					"presentation_rect" : [ 26.0, 14.0, 248.0, 22.0 ],
 					"tabmode" : 0,
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
@@ -999,6 +999,13 @@
 				"bootpath" : "~/sigv/elements",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bmesh.txt",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

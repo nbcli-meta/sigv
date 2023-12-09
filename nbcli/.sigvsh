@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Quit sigv standalone
+function qs() {
+  killall sigv
+}
+
 ## Orca cli
 function cli() {
   $HOME/orca/build/debug/cli
@@ -7,6 +12,9 @@ function cli() {
 
 ## Orca modules path
 omods=$HOME/orca-modules/modules
+
+# Orca components path
+ocoms=$HOME/orca-modules.wiki/components
 
 ## sigv comps path
 NBCLI=$HOME/sigv/nbcli
@@ -208,6 +216,9 @@ function terra() {
   }
 function ~() {
   $HOME/sigv/nbcli/max/~ "$@" 
+  }
+function tilde() {
+  $HOME/sigv/nbcli/max/tilde "$@"
   }
 function wave() {
   $HOME/sigv/nbcli/max/wave "$@" 

@@ -40,6 +40,92 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 414.5, 301.0, 83.0, 23.0 ],
+					"text" : "prepend shiftr"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 414.5, 326.0, 42.0, 23.0 ],
+					"text" : "s coda"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.283333333333303, 305.0, 83.0, 23.0 ],
+					"text" : "prepend shiftr"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.117373570799828, 0.61899197101593, 0.25967264175415, 1.0 ],
+					"id" : "obj-38",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 414.5, 276.0, 132.0, 23.0 ],
+					"text" : "prepend publish /lzmidi",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.117373570799828, 0.61899197101593, 0.25967264175415, 1.0 ],
+					"id" : "obj-117",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.283333333333303, 276.0, 133.0, 23.0 ],
+					"text" : "prepend publish /lzdata",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 133.899999999999977, 276.0, 93.0, 23.0 ],
+					"text" : "scale -2 2 12 72"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 133.899999999999977, 305.0, 47.0, 23.0 ],
+					"text" : "s lzmidi"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -576,8 +662,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 27.899999999999977, 276.0, 93.0, 23.0 ],
-					"text" : "scale -2 2 12 72"
+					"patching_rect" : [ 27.899999999999977, 276.0, 79.0, 23.0 ],
+					"text" : "scale -2 2 0 1"
 				}
 
 			}
@@ -1158,8 +1244,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 27.899999999999977, 305.0, 76.0, 23.0 ],
-					"text" : "s lorenz-data"
+					"patching_rect" : [ 27.899999999999977, 305.0, 48.0, 23.0 ],
+					"text" : "s lzdata"
 				}
 
 			}
@@ -1324,6 +1410,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 6 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-117", 0 ]
 				}
 
 			}
@@ -1690,6 +1783,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 14 ],
 					"source" : [ "obj-5", 1 ]
 				}
@@ -1796,6 +1910,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
+					"order" : 1,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"order" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -1808,6 +1931,36 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-24" : [ "live.toggle[18]", "live.toggle", 0 ],
+			"obj-35" : [ "live.text[18]", "live.text", 0 ],
+			"obj-8::obj-50" : [ "live.text[19]", "live.text", 0 ],
+			"obj-8::obj-51" : [ "live.toggle[19]", "live.toggle", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "jit.*.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "lorenz.maxpat",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

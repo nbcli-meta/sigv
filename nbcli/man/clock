@@ -4,11 +4,11 @@
 
 =head1 NAME
 
- -
+clock - real-time clock
 
 =head1 SYNOPSIS
 
-
+Displays a real-time clock in HR:MIN:SEC format.
 
 =head1 OPTIONS
 

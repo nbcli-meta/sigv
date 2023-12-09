@@ -4,7 +4,7 @@
 
 =head1 NAME
 
- -
+gen - extended Bash sequencer for sigv
 
 =head1 SYNOPSIS
 
@@ -12,13 +12,15 @@
 
 =head1 OPTIONS
 
+
+
 =head1 DESCRIPTION
 
-
+gen augments the seq command in Bash with a variable for amending the sleep time
 
 =head1 EXAMPLES
 
-
+gen 0 .2 4 .0125 "ch 2 60 64 .0125"
 
 =head1 NOTES
 
