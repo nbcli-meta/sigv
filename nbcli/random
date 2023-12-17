@@ -1,4 +1,0 @@
-#!/bin/bash
-
-# echo $(( $RANDOM % 127 + 0 ))
-echo $( jot -p 0 -r 1 0 127 )

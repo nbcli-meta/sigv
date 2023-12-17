@@ -50,3 +50,4 @@ sfor 3 "rand2 2 56" .25
 
 new pkmp 0 0 peakamp~ 60
 sfor 15 "rand 0 10" .01 | spark
+s shiftr publish r100 `rand 100`

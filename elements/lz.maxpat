@@ -108,8 +108,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 133.899999999999977, 276.0, 93.0, 23.0 ],
-					"text" : "scale -2 2 12 72"
+					"patching_rect" : [ 133.899999999999977, 276.0, 100.0, 23.0 ],
+					"text" : "scale -2 2 12 127"
 				}
 
 			}
@@ -1931,36 +1931,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-24" : [ "live.toggle[18]", "live.toggle", 0 ],
-			"obj-35" : [ "live.text[18]", "live.text", 0 ],
-			"obj-8::obj-50" : [ "live.text[19]", "live.text", 0 ],
-			"obj-8::obj-51" : [ "live.toggle[19]", "live.toggle", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "jit.*.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "lorenz.maxpat",
-				"bootpath" : "~/sigv/elements",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
