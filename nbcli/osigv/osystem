@@ -10,7 +10,6 @@
 | e | wrld exec zoom | … e 1 |
 | q | fx pass | … q 0  |
 | w | wrld window pos | … w 0 |
-| s | cmd enable | … s 1 |
 | t | tilde (~) set | … t s 4 |
 | t | tilde (~) src | … t r 6 |
 | t | tilde (~) link | … t l 1 |

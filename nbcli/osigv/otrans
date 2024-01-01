@@ -12,3 +12,14 @@
 | f | proc period | ^ f a |
 | x | proc scale | ^ x i |
 
+0 - sphere
+1 - torus
+2 - cylinder
+3 - opencylinder
+4 - cube
+5 - opencube
+6 - plane
+7 - circle
+8 - cone
+9 - capsule
+

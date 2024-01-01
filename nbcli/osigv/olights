@@ -7,4 +7,11 @@
 | r | random diffuse | º r 0 |
 | c | diffuse (color) | º c a b 2 |
 | d | delete light | º d 2 |
+| t | light type | º t 3 |
+
+Light types
+0 - point
+1 - directional
+2 - spot
+3 - hemisphere
 
