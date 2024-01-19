@@ -19,9 +19,49 @@ ocoms=$HOME/orca-modules.wiki/components
 ## sigv comps path
 NBCLI=$HOME/sigv/nbcli
 
-
 export RACK_DIR=$HOME/Rack-SDK
 
+
+## o-sigv operators ##
+
+function oanim() {
+  cat "$HOME/sigv/nbcli/osigv/oanim"
+}
+
+
+function oaudio() {
+  cat "$HOME/sigv/nbcli/osigv/oaudio"
+}
+
+
+function ochao() {
+  cat "$HOME/sigv/nbcli/osigv/ochao"
+}
+
+
+function olights() {
+  cat "$HOME/sigv/nbcli/osigv/olights"
+}
+
+
+function omat() {
+  cat "$HOME/sigv/nbcli/osigv/omat"
+}
+
+
+function oserial() {
+  cat "$HOME/sigv/nbcli/osigv/oserial"
+}
+
+
+function osystem() {
+  cat "$HOME/sigv/nbcli/osigv/osystem"
+}
+
+
+function otrans() {
+  cat "$HOME/sigv/nbcli/osigv/otrans"
+}
 
 ## 3D directory
 models=$HOME/_studio/material/3d
@@ -126,6 +166,9 @@ function cv() {
 function fpic() {
   $HOME/sigv/nbcli/max/fpic "$@" 
   }
+function frag() {
+  $HOME/sigv/nbcli/max/frag "$@"
+  }
 function fx() {
   $HOME/sigv/nbcli/max/fx "$@" 
   }
@@ -196,6 +239,9 @@ function proc() {
 function rossler() {
   $HOME/sigv/nbcli/max/rossler "$@" 
   }
+function shady() {
+  $HOME/sigv/nbcli/max/shady "$@"
+  }
 function sketch() {
   $HOME/sigv/nbcli/max/sketch "$@" 
   }
@@ -219,6 +265,9 @@ function ~() {
   }
 function tilde() {
   $HOME/sigv/nbcli/max/tilde "$@"
+  }
+function vert() {
+  $HOME/sigv/nbcli/max/vert "$@"
   }
 function wave() {
   $HOME/sigv/nbcli/max/wave "$@" 

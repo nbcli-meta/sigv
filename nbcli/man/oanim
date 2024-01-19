@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+
+: <<'END_OF_DOCS'
+
+=head1 NAME
+
+oanim - o-sigv animation operator 
+
+=head1 SYNOPSIS
+
+| ` | ANIM | Notation |
+| --- | --- | --- |
+| t | turn | ` t i 2 i |
+| s | scaleto | ` s 1 1 1 a |
+| m | moveto | ` m i i i s |
+| r | rotateto | ` r i 0 i |
+| e | ease | ` e 9 |
+| f | ease function | ` f 0 |
+
+
+
+
+=head1 OPTIONS
+
+=head1 DESCRIPTION
+
+| ` | ANIM | Notation |
+| --- | --- | --- |
+| t | turn | ` t i 2 i |
+| s | scaleto | ` s 1 1 1 a |
+| m | moveto | ` m i i i s |
+| r | rotateto | ` r i 0 i |
+| e | ease | ` e 9 |
+| f | ease function | ` f 0 |
+
+
+=head1 EXAMPLES
+
+
+
+=head1 NOTES
+
+| ` | ANIM | Notation |
+| --- | --- | --- |
+| t | turn | ` t i 2 i |
+| s | scaleto | ` s 1 1 1 a |
+| m | moveto | ` m i i i s |
+| r | rotateto | ` r i 0 i |
+| e | ease | ` e 9 |
+| f | ease function | ` f 0 |
+
+
+
+
+=head1 LICENSE AND COPYRIGHT
+
+MIT License
+
+Copyright (c) 2023 Marcus A. Gordon
+
+=cut
+END_OF_DOCS
