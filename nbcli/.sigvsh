@@ -346,19 +346,12 @@ function rmidi() {
 function shiftr() { $HOME/sigv/nbcli/shiftr "$*" }
 
 ## Core Elements (sigv)
-
-function lux() {$HOME/sigv/nbcli/lux "$@" } #TBD
+function ca() {$HOME/sigv/nbcli/ca "$@" }
 function automata() {$HOME/sigv/nbcli/automata "$@" & }
-function bbn() {$HOME/sigv/nbcli/bbn "$@" } #TBD
-function serial() {$HOME/sigv/nbcli/serial "$@" } #TBD
-function clock() {$HOME/sigv/nbcli/clock "$@" } #TBD
+function clock() {$HOME/sigv/nbcli/clock "$@" } 
 function timer() {$HOME/sigv/nbcli/timer "$@" }
-function pattern() {$HOME/sigv/nbcli/pattern "$@" & } #TBD
-function iter() {$HOME/sigv/nbcli/iter "$@" & }
-function random() {$HOME/sigv/nbcli/random "$@" }
 function rand() {$HOME/sigv/nbcli/rand "$@" }
 function randx() {$HOME/sigv/nbcli/randx "$@" }
-function rand0() {$HOME/sigv/nbcli/rand0 "$@" }
 function count() {$HOME/sigv/nbcli/count "$@" }
 function gen() {$HOME/sigv/nbcli/gen "$@" & }
 function ch() {$HOME/sigv/nbcli/ch "$@" }
@@ -368,10 +361,8 @@ function opz() {$HOME/sigv/nbcli/opz "$@" }
 function rnr() {$HOME/sigv/nbcli/rnr "$@" }
 function rsr() {$HOME/sigv/nbcli/rsr "$@" }
 function ipad() {$HOME/sigv/nbcli/ipad "$@" }
-#function oiio() {oiiotool "$*" }
 function crow() {$HOME/sigv/nbcli/crow "$@" }
 function ice() {$HOME/sigv/nbcli/ice "$@" }
-function spk() {$HOME/sigv/nbcli/spk "$@" }
 
 function qrec() {
   if [[ "$1" == "-s" ]]
