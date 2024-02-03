@@ -37,4 +37,4 @@ function automaton {
   done
 }
 
-automaton "$@"
+automaton "$@" | cut -c 6- # magfoto edit

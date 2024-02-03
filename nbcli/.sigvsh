@@ -10,6 +10,9 @@ function cli() {
   $HOME/orca/build/debug/cli
 }
 
+## alias for glslViewer
+alias gv='glslViewer'
+
 ## Orca modules path
 omods=$HOME/orca-modules/modules
 
@@ -109,6 +112,9 @@ function rst() {
   }
 
 ## sigv.js messengers
+function eca() {
+  $HOME/sigv/nbcli/max/eca "$@"
+  }
 function js() {
   $HOME/sigv/nbcli/max/js "$@" 
   }
