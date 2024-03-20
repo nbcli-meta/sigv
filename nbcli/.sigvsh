@@ -223,6 +223,9 @@ function morph0() {
 function morpha() {
   $HOME/sigv/nbcli/max/morpha "$@" 
   }
+function morph3() {
+  $HOME/sigv/nbcli/max/morph3 "$@" 
+  }
 function nature() {
   $HOME/sigv/nbcli/max/nature "$@" 
   }
