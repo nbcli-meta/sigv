@@ -23,6 +23,12 @@ if [[ "$1" == "--config" ]]
   then
     echo "Launching sigv in Max"
     open "$HOME/sigv/elements/_core.maxpat"
+  elif [[ "$1" == "-o" ]]
+  then
+    open /Applications/sigv.app
+    cd "$HOME/o-sigv/desktop" && npm start &
+    cd "$NBCLI"
+    clear
   else
     echo "Options: sigv -c [(default) launch sigv in Max] -b [list directory ofnbcli] --examples [display example code] -m [create new man page] --config [open sigv shell configuration]"
     echo " "

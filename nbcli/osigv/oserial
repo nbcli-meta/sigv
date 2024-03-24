@@ -5,7 +5,7 @@
 | p | gpio pulse | ∆ p d 7 |
 | a | gpio analog | ∆ a 4 s |
 | m | mcu message | ∆ m 1 |
-| c | crow open | ∆ c |
+| o | crow open | ∆ o |
 
 The ∆ gpio serial commands are meant to be used primarily via a securely connected (SSH) RaspberryPi, and thus controlling its GPIO pins with the Python library gpiozero. (Blueberry Framework)
 
