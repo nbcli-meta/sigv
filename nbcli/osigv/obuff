@@ -5,4 +5,4 @@
 | s | set buffer | | s 3 |
 | p | pause buffer | | p  |
 | r | resume buffer | | r |
-
+| o | select sample | | o 4 |

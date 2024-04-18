@@ -22,6 +22,10 @@ ocoms=$HOME/orca-modules.wiki/components
 ## sigv comps path
 NBCLI=$HOME/sigv/nbcli
 
+## Estuary Samples
+samps=$HOME/Estuary/static/samples
+
+
 export RACK_DIR=$HOME/Rack-SDK
 
 
@@ -262,6 +266,9 @@ function som() {
   }
 function specs() {
   $HOME/sigv/nbcli/max/specs "$@" 
+  }
+function spk() {
+  $HOME/sigv/nbcli/max/spk "$@" 
   }
 function synth() {
   $HOME/sigv/nbcli/max/synth "$@" 

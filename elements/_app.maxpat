@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -136,6 +136,7 @@
 							"parameter_enum" : [ "", "wclose" ],
 							"parameter_longname" : "live.text",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -174,6 +175,7 @@
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "live.toggle",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.toggle",
 							"parameter_type" : 2
 						}
@@ -329,8 +331,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -958,6 +960,8 @@
 			"obj-28::obj-37" : [ "live.toggle[8]", "live.toggle", 0 ],
 			"obj-34" : [ "live.toggle", "live.toggle", 0 ],
 			"obj-35" : [ "live.text", "live.text", 0 ],
+			"obj-3::obj-18::obj-15::obj-105" : [ "live.toggle[6]", "live.toggle", 0 ],
+			"obj-3::obj-18::obj-15::obj-62" : [ "live.text[6]", "live.text", 0 ],
 			"obj-3::obj-18::obj-26" : [ "live.text[2]", "live.text", 0 ],
 			"obj-3::obj-18::obj-5" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"obj-3::obj-26" : [ "live.text[4]", "live.text", 0 ],
@@ -1059,8 +1063,8 @@
 			}
 , 			{
 				"name" : "main.js",
-				"bootpath" : "~/Desktop/_/o-sigv-dev/Orca-sigv/desktop",
-				"patcherrelativepath" : "../../Desktop/_/o-sigv-dev/Orca-sigv/desktop",
+				"bootpath" : "~/o-sigv/desktop",
+				"patcherrelativepath" : "../../o-sigv/desktop",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

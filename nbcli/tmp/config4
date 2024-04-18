@@ -1,0 +1,4 @@
+1, spk 1 read $HOME/Estuary/static/samples/feel/sub.wav;
+2, spk 2 read $HOME/Estuary/static/samples/ade/003_abt.wav;
+3, spk 3 read $HOME/Estuary/static/samples/ade/009_rise.wav;
+

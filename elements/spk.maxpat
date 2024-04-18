@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 91.0, 604.0, 67.0, 23.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -84,10 +96,10 @@
 					"id" : "obj-33",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "bang" ],
-					"patching_rect" : [ 21.0, 444.0, 108.0, 23.0 ],
-					"text" : "mcs.play~ sammi 2"
+					"numoutlets" : 3,
+					"outlettype" : [ "multichannelsignal", "", "" ],
+					"patching_rect" : [ 21.0, 452.0, 153.0, 23.0 ],
+					"text" : "mc.play~ sammi @chans 16"
 				}
 
 			}
@@ -918,7 +930,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 177.0, 448.0, 50.0, 23.0 ],
+					"patching_rect" : [ 170.0, 409.0, 50.0, 23.0 ],
 					"text" : "set $1"
 				}
 
@@ -1273,6 +1285,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"midpoints" : [ 318.166666666666686, 559.5, 217.5, 559.5 ],
 					"source" : [ "obj-38", 2 ]
@@ -1344,6 +1363,24 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-23" : [ "gain[3]", "gain", 0 ],
+			"obj-27" : [ "live.text[9]", "live.text", 0 ],
+			"obj-30" : [ "live.toggle[9]", "live.toggle", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [  ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
