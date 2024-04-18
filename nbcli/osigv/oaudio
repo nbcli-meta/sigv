@@ -12,4 +12,5 @@
 | v | midi vst plug | _ v 1 5 |
 | v | midi vst open | _ v 0 1 1 |
 | v | midi vst program | _ v 1 p 3 |
+| c | spk config load | _ c 1 |
 
