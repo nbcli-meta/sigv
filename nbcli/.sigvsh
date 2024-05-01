@@ -84,6 +84,7 @@ cine=$HOME/_studio/material/cine
 generic=$HOME/_studio/material/generic
 pbr=$HOME/_studio/material/pbr
 brazil=$HOME/_studio/material/brazil
+hdri=$HOME/_studio/material/hdri
 
 ## Rain (Daisy based granular synth WIP)
 rain="$HOME/PhD/Dissertation Research/PHASE II/[ M ] Rain"
