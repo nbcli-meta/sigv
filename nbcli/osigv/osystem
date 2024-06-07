@@ -8,7 +8,10 @@
 | x | exit | … x 0 |
 | b | wrld border | … b 0 |
 | e | wrld exec zoom | … e 1 |
-| q | fx pass | … q 0  |
+| q | fx atmos density | … q 0  |
+| q | fx mblur velocity_scale | … q 1  |
+| q | fx gamma density | … q 2  |
+| q | fx bloom_amt | … q 3  |
 | w | wrld window pos | … w 0 |
 | t | tilde (~) set | … t s 4 |
 | t | tilde (~) src | … t r 6 |

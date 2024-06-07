@@ -1,0 +1,16 @@
+b2 position 0 0.8 0
+new b3 0 0 b3
+b3 read $models/../meshes/a.dae
+b3 position 0 0 2
+b3 position 0 2 0
+b3 position 0 0 2
+b3 position 0 0 4
+b3 position 0 0 -4
+b3 position 0. 0. 2
+b3 position 0. 0. 0 2
+b3 position 2 0 0
+b3 anim moveto 0 0 0 4
+b3 anim moveto 2 0 0 4
+history
+histo
+rm tmp/tka

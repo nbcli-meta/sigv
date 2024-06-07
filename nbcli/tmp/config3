@@ -1,5 +1,3 @@
-#!/bin/bash
-
 0, spk 1 read /Users/magfoto/Estuary/static/samples/ab/000_ab2closedhh.wav;
 1, spk 2 read /Users/magfoto/Estuary/static/samples/ab/001_ab2crash.wav;
 2, spk 3 read /Users/magfoto/Estuary/static/samples/ab/002_ab2hit1.wav;
