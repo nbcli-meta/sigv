@@ -3,8 +3,8 @@
 2, spk 2 read /Users/magfoto/Estuary/static/samples/ade/003_abt.wav;
 3, spk 3 read /Users/magfoto/Estuary/static/samples/ade/009_rise.wav;
 4, spk 4 read /Users/magfoto/_studio/material/sound-clips/freesound/crolag.wav;
-5, spk 5 read /Users/magfoto/_studio/material/sound-clips/freesound/forest-chimes.wav;
-6, spk 6 read /Users/magfoto/_studio/material/sound-clips/freesound/crolag.riverside.wav;
+5, spk 5 read /Users/magfoto/_studio/material/sound-clips/freesound/forest-chimes.mp3;
+6, spk 6 read /Users/magfoto/_studio/material/sound-clips/freesound/riverside.wav;
 7, spk 7 read /Users/magfoto/orca-play/media/dark/kick-up.wav;
 8, spk 8 read /Users/magfoto/orca-play/media/dark/kick-down.wav;
 9, spk 9 read /Users/magfoto/orca-play/media/dark/kick.wav;

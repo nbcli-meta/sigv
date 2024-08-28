@@ -2,9 +2,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>aio - sigv.js audio interface module</title>
+<title></title>
+<link rel="stylesheet" href="style.css" type="text/css" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<link rev="made" href="mailto:root@bbmhh.p1s.plx.sd.apple.com" />
+<link rev="made" href="mailto:root@sonoma.nonet" />
 </head>
 
 <body>
@@ -12,7 +13,11 @@
 
 
 <ul id="index">
-  <li><a href="#NAME">NAME</a></li>
+  <li>
+    <ul>
+      <li><a href="#NAME">NAME</a></li>
+    </ul>
+  </li>
   <li><a href="#SYNOPSIS">SYNOPSIS</a></li>
   <li><a href="#OPTIONS">OPTIONS</a></li>
   <li><a href="#DESCRIPTION">DESCRIPTION</a></li>
@@ -21,96 +26,35 @@
   <li><a href="#LICENSE-AND-COPYRIGHT">LICENSE AND COPYRIGHT</a></li>
 </ul>
 
-<h1 id="NAME">NAME</h1>
+<h2 id="NAME">NAME</h2>
 
-<p>aio - sigv.js audio interface module</p>
+<h1 id="SYNOPSIS">SYNOPSIS
 
-<h1 id="SYNOPSIS">SYNOPSIS</h1>
+</h1>
 
-<p>aio [ activate ] [ sigx &gt; div ] [ sigy &gt; div ] [ sig &gt; div ] [ phase &gt; div ] [ peak &gt; div ]</p>
+<h1 id="OPTIONS">OPTIONS
 
-<h1 id="OPTIONS">OPTIONS</h1>
+</h1>
 
-<p>Each of the module parameters: sigx, sigy, sig, phase, and peak have a div subparameter acting as a multiplier for expanding or compressing their entered values.</p>
+<h1 id="DESCRIPTION">DESCRIPTION
 
-<h1 id="DESCRIPTION">DESCRIPTION</h1>
+</h1>
 
-<p>The aio module activates the DSP in the Max environment, a requirment for analysis of incoming and outgoing audio. Required for aio parameter of sigv.js primitives, and for modules such as grain (granular synth) and lttp (image synth).</p>
+<h1 id="EXAMPLES">EXAMPLES
 
-<h1 id="EXAMPLES">EXAMPLES</h1>
+</h1>
 
-<p>aio activate 2 (activates audio DSP for incoming audio) aio peak 2 (transfers audio data to bfg module origin values, see man bfg for more information)</p>
+<h1 id="NOTES">NOTES
 
-<h1 id="NOTES">NOTES</h1>
+</h1>
 
-<pre><code>    +------------------------------------------------+
-    |                                                |
-    |          +-------+             +----------+    |    +--------+       +------+
-    |          | div1  | &lt;----       |   sigx   |    |    |  sigy  |   --&gt; | div2 |
-    |          +-------+             +----------+    |    +--------+       +------+
-    |                                  ^             |      ^
-    |                                  |             |      |
-    v                                  |             |      |
-+ - - - - - +
-&#39;    sys    &#39;
-&#39;           &#39;
-&#39; +-------+ &#39;  +-------+             +-----------------------------+       +------+
-&#39; | trans | &#39;  | phase | &lt;----       |                             |   --&gt; | pwr  |
-&#39; +-------+ &#39;  +-------+             |                             |       +------+
-&#39;           &#39;                        |                             |
-+ - - - - - +                        |                             |
-                 |                   |             aio             |
-                 |                   |                             |
-                 v                   |                             |
-               +-------+             |                             |       +------+
-               | div3  |             |                             |   --&gt; | sig  |
-               +-------+             +-----------------------------+       +------+
-                                       |                    |
-                                       |                    |
-                                       v                    v
-             +- - - - - - - - - - - - - - - - - - - - - -++ - - - - -+
-             &#39;                  core                     &#39;&#39;          &#39;
-             &#39;                                           &#39;&#39;          &#39;
-             &#39; +-------+             +----------+        &#39;+--------+ &#39;
-             &#39; |   1   | &lt;---------- | activate | ---+   &#39;| close  | &#39;
-             &#39; +-------+             +----------+    |   &#39;+--------+ &#39;
-             &#39;                         |             |   &#39;  |        &#39;
-             +- - - - - - - - -        |             |   &#39;  |        &#39;
-                               &#39;       |             |   &#39;  |        &#39;
-                               &#39;       |             |   &#39;  |        &#39;
-                               &#39;       v             |   &#39;  v        &#39;
-                               &#39;     +----------+    |   &#39;+--------+ &#39;
-                               &#39;     |    0     |    |   &#39;| wclose | &#39;
-                               &#39;     +----------+    |   &#39;+--------+ &#39;
-                               &#39;                     |   &#39;&#39;          &#39;
-                               &#39;                     |   &#39;+ - - - - -+
-                               &#39;     +----------+    |   &#39;
-                               &#39;     |    2     | &lt;--+   &#39;
-                               &#39;     +----------+        &#39;
-                               &#39;                         &#39;
-                               +- - - - - - - - - - - - -+
-             +- - - - - - - - - - - - - - - - - - +
-             &#39;           peaks                    &#39;
-             &#39;                                    &#39;
-             &#39; +-------+             +----------+ &#39;
-             &#39; | line  | &lt;---------- |   peak   | &#39;
-             &#39; +-------+             +----------+ &#39;
-             &#39;                         |          &#39;
-             +- - - - - - - - -        |          &#39;
-                               &#39;       |          &#39;
-                               &#39;       |          &#39;
-                               &#39;       v          &#39;
-                               &#39;     +----------+ &#39;
-                               &#39;     |   amp    | &#39;
-                               &#39;     +----------+ &#39;
-                               &#39;                  &#39;
-                               +- - - - - - - - - +</code></pre>
+<h1 id="LICENSE-AND-COPYRIGHT">LICENSE AND COPYRIGHT
 
-<h1 id="LICENSE-AND-COPYRIGHT">LICENSE AND COPYRIGHT</h1>
+</h1>
 
-<p>MIT License</p>
+MIT License
 
-<p>Copyright (c) 2022 Marcus A. Gordon</p>
+Copyright (c) 2023 Marcus A. Gordon
 
 
 </body>

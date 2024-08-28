@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 514.0, 433.0, 1534.0, 923.0 ],
+		"rect" : [ 535.0, 143.0, 1534.0, 923.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -214,7 +214,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 790.0, 239.0, 92.0, 23.0 ],
-					"text" : "exposure 0.05"
+					"text" : "exposure 0."
 				}
 
 			}
@@ -226,7 +226,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 895.0, 115.0, 50.0, 23.0 ],
-					"text" : "0.05"
+					"text" : "0."
 				}
 
 			}
@@ -238,8 +238,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 867.0, 47.0, 50.0, 37.0 ],
-					"text" : "0.05 2500"
+					"patching_rect" : [ 867.0, 47.0, 48.0, 37.0 ],
+					"text" : "0. 2500"
 				}
 
 			}
@@ -336,7 +336,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 292.0, 789.5, 150.0, 78.0 ],
+					"patching_rect" : [ 249.0, 765.0, 150.0, 78.0 ],
 					"text" : "Nuit Blanche sigv scale\n\n@size 768 1024 @windowposition 640 128 @dim 768 1024"
 				}
 
@@ -348,7 +348,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 292.0, 684.0, 150.0, 78.0 ],
+					"patching_rect" : [ 69.0, 765.0, 150.0, 78.0 ],
 					"text" : "Original sigv scale\n\n@size 2048 1280 @windowposition 0 0 @dim 1920 1080"
 				}
 
@@ -1712,11 +1712,11 @@
 				"box" : 				{
 					"id" : "obj-38",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 133.25, 108.0, 63.0, 23.0 ],
-					"text" : "route . .. ..."
+					"numinlets" : 6,
+					"numoutlets" : 6,
+					"outlettype" : [ "", "", "", "", "", "" ],
+					"patching_rect" : [ 133.25, 108.0, 87.0, 23.0 ],
+					"text" : "route . .. ... .... d"
 				}
 
 			}
@@ -1727,8 +1727,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 144.0, 556.0, 342.0, 23.0 ],
-					"text" : "jit.gl.pass @fxname smear @quality lo @erase_color 0. 0. 0. 0.01"
+					"patching_rect" : [ 144.0, 556.0, 265.0, 23.0 ],
+					"text" : "jit.gl.pass @fxname motionblur @velocity_scale 5"
 				}
 
 			}
@@ -1997,7 +1997,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"midpoints" : [ 315.0, 574.5, 210.5, 574.5 ],
+					"midpoints" : [ 276.5, 574.5, 210.5, 574.5 ],
 					"source" : [ "obj-18", 1 ]
 				}
 
@@ -2165,8 +2165,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 186.75, 338.0, 78.5, 338.0 ],
-					"source" : [ "obj-38", 3 ]
+					"midpoints" : [ 210.75, 338.0, 78.5, 338.0 ],
+					"source" : [ "obj-38", 5 ]
 				}
 
 			}
@@ -2181,7 +2181,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"midpoints" : [ 172.083333333333314, 308.5, 240.5, 308.5 ],
+					"midpoints" : [ 169.949999999999989, 308.5, 240.5, 308.5 ],
 					"source" : [ "obj-38", 2 ]
 				}
 
@@ -2189,7 +2189,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-69", 0 ],
-					"midpoints" : [ 157.416666666666657, 282.5, 622.5, 282.5 ],
+					"midpoints" : [ 156.349999999999994, 282.5, 622.5, 282.5 ],
 					"source" : [ "obj-38", 1 ]
 				}
 

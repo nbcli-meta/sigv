@@ -1,5 +1,5 @@
 0, spk 1 read /Users/magfoto/Estuary/static/samples/electro1/005_et1kick1.wav;
-1, spk 2 read /Users/magfoto/Estuary/static/samples/electro1/002_et1crash.wav;
+1, spk 2 read /Users/magfoto/Estuary/static/samples/electro1/001_et1crash.wav;
 2, spk 3 read /Users/magfoto/Estuary/static/samples/fire/fire.wav;
 3, spk 4 read /Users/magfoto/Estuary/static/samples/tacscan/000_01.wav;
 4, spk 5 read /Users/magfoto/Estuary/static/samples/east/000_nipon_wood_block.wav;

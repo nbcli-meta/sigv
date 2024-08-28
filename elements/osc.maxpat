@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 182.0, 472.0, 909.0, 613.0 ],
+		"rect" : [ 182.0, 472.0, 1047.0, 613.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "memphis-style_template",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-67",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 286.0, 123.0, 88.0, 23.0 ],
+					"text" : "prepend orca b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-66",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 303.0, 154.0, 167.5, 23.0 ],
+					"text" : "orca b 4"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-63",
 					"maxclass" : "newobj",
@@ -217,6 +241,7 @@
 							"parameter_enum" : [ "", "wclose" ],
 							"parameter_longname" : "live.text[16]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -245,6 +270,7 @@
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "live.toggle[16]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.toggle",
 							"parameter_type" : 2
 						}
@@ -315,8 +341,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1101,7 +1127,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 65.0, 464.0, 255.0, 23.0 ],
-					"text" : "shiftr connect"
+					"text" : "orca b 4"
 				}
 
 			}
@@ -1120,11 +1146,11 @@
 				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "newobj",
-					"numinlets" : 8,
-					"numoutlets" : 8,
-					"outlettype" : [ "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 37.0, 153.0, 155.0, 23.0 ],
-					"text" : "route /sigv /p /1 /2 /3 /4 /s"
+					"numinlets" : 9,
+					"numoutlets" : 9,
+					"outlettype" : [ "", "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 37.0, 153.0, 170.0, 23.0 ],
+					"text" : "route /sigv /p /1 /2 /3 /4 /s /b"
 				}
 
 			}
@@ -1184,8 +1210,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1646,8 +1672,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "list" ],
-					"patching_rect" : [ 196.166666666666629, 81.0, 451.0, 23.0 ],
-					"text" : "mqtt mqtt://ndstudiolabmtf:ifQ7ARK4TBQPAs8i@ndstudiolabmtf.cloud.shiftr.io sigv"
+					"patching_rect" : [ 196.166666666666629, 81.0, 368.0, 23.0 ],
+					"text" : "mqtt mqtt://magfoto:e7baZhZ6ykkkjJYi@magfoto.cloud.shiftr.io sigv"
 				}
 
 			}
@@ -1766,7 +1792,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
-					"midpoints" : [ 65.928571428571431, 188.0, 111.5, 188.0 ],
+					"midpoints" : [ 65.375, 188.0, 111.5, 188.0 ],
 					"order" : 0,
 					"source" : [ "obj-20", 1 ]
 				}
@@ -1775,7 +1801,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 1 ],
-					"midpoints" : [ 163.071428571428555, 452.0, 310.5, 452.0 ],
+					"midpoints" : [ 159.75, 452.0, 310.5, 452.0 ],
 					"order" : 1,
 					"source" : [ "obj-20", 6 ]
 				}
@@ -1792,7 +1818,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
-					"midpoints" : [ 65.928571428571431, 295.5, 74.5, 295.5 ],
+					"midpoints" : [ 65.375, 295.5, 74.5, 295.5 ],
 					"order" : 1,
 					"source" : [ "obj-20", 1 ]
 				}
@@ -1823,6 +1849,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
 					"source" : [ "obj-20", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 0 ],
+					"source" : [ "obj-20", 7 ]
 				}
 
 			}
@@ -2205,33 +2238,28 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"order" : 1,
+					"source" : [ "obj-67", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-66", 1 ],
+					"order" : 0,
+					"source" : [ "obj-67", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
 			}
  ],
-		"parameters" : 		{
-			"obj-34" : [ "live.toggle[16]", "live.toggle", 0 ],
-			"obj-35" : [ "live.text[16]", "live.text", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "mqtt.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

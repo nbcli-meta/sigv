@@ -360,26 +360,62 @@ function rmidi() {
 
 # mqtt : mqtt.js console implementation (mqtt help for more info)
 
-function shiftr() { $HOME/sigv/nbcli/shiftr "$*" }
+function shiftr() { 
+	$HOME/sigv/nbcli/shiftr "$*" 
+}
 
 ## Core Elements (sigv)
-function ca() {$HOME/sigv/nbcli/ca "$@" }
-function automata() {$HOME/sigv/nbcli/automata "$@" & }
-function clock() {$HOME/sigv/nbcli/clock "$@" } 
-function timer() {$HOME/sigv/nbcli/timer "$@" }
-function rand() {$HOME/sigv/nbcli/rand "$@" }
-function randx() {$HOME/sigv/nbcli/randx "$@" }
-function count() {$HOME/sigv/nbcli/count "$@" }
-function gen() {$HOME/sigv/nbcli/gen "$@" & }
-function ch() {$HOME/sigv/nbcli/ch "$@" }
-function mod() {$HOME/sigv/nbcli/mod "$@" }
-function usb() {$HOME/sigv/nbcli/usb "$@" }
-function opz() {$HOME/sigv/nbcli/opz "$@" }
-function rnr() {$HOME/sigv/nbcli/rnr "$@" }
-function rsr() {$HOME/sigv/nbcli/rsr "$@" }
-function ipad() {$HOME/sigv/nbcli/ipad "$@" }
-function crow() {$HOME/sigv/nbcli/crow "$@" }
-function ice() {$HOME/sigv/nbcli/ice "$@" }
+function ca() {
+	$HOME/sigv/nbcli/ca "$@" 
+}
+function automata() {
+	$HOME/sigv/nbcli/automata "$@" & 
+}
+function clock() {
+	$HOME/sigv/nbcli/clock "$@" 
+} 
+function timer() {
+	$HOME/sigv/nbcli/timer "$@" 
+}
+function rand() {
+	$HOME/sigv/nbcli/rand "$@" 
+}
+function randx() {
+	$HOME/sigv/nbcli/randx "$@" 
+}
+function count() {
+	$HOME/sigv/nbcli/count "$@" 
+}
+function gen() {
+	$HOME/sigv/nbcli/gen "$@" & 
+}
+function ch() {
+	$HOME/sigv/nbcli/ch "$@" 
+}
+function mod() {
+	$HOME/sigv/nbcli/mod "$@" 
+}
+function usb() {
+	$HOME/sigv/nbcli/usb "$@" 
+}
+function opz() {
+	$HOME/sigv/nbcli/opz "$@" 
+}
+function rnr() {
+	$HOME/sigv/nbcli/rnr "$@" 
+}
+function rsr() {
+	$HOME/sigv/nbcli/rsr "$@" 
+}
+function ipad() {
+	$HOME/sigv/nbcli/ipad "$@" 
+}
+function crow() {
+	$HOME/sigv/nbcli/crow "$@" 
+}
+function ice() {
+	$HOME/sigv/nbcli/ice "$@" 
+}
 
 function qrec() {
   if [[ "$1" == "-s" ]]
@@ -393,3 +429,5 @@ function qrec() {
 export PATH=$PATH:$HOME/sigv/nbcli:$HOME/sigv/nbcli/max
 
 source $HOME/.bashrc
+
+
