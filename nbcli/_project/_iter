@@ -1,9 +1,0 @@
-#!/bin/bash
-
-while (( COUNT<$1 ))
-do
-  sleep $2
-  $3
-  let COUNT++
-  #echo $COUNT
-done

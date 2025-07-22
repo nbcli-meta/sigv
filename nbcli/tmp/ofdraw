@@ -1,3 +1,0 @@
-#!/bin/bash
-
-sendosc 0.0.0.0 7777 /1 i $1 i $2 i $3

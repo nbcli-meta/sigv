@@ -1,7 +1,0 @@
-s geo gs1 shape torus
-s geo mesh line_width 7.5 ; morph 200 2
-s geo mesh line_width 27.5 ; morph geo 200 2
-s geo mesh line_width 7.5 ; morph geo 200 2
-s geo gs2 shape cube
-s geo gs1 dim 75 75 ; s geo gs2 dim 75 75
-s geo gs2 shape sphere

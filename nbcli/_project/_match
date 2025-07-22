@@ -1,4 +1,0 @@
-shopt -s extglob
-     if [[ "$FN" == *.@(jpg|jpeg) ]]
-     then
-	#

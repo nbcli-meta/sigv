@@ -1,1 +1,0 @@
-open thispatcherfolder "Macintosh HD:/Users/magfoto/sigv"

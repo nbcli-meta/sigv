@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1694.0, 597.0, 232.0, 338.0 ],
+		"rect" : [ 1041.0, 353.0, 232.0, 338.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -88,13 +88,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-13",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.541666666666629, 88.0, 175.0, 37.0 ],
-					"text" : "/Users/magfoto/sigv/elements/nbcli/"
+					"patching_rect" : [ 50.541666666666629, 88.0, 165.0, 23.0 ],
+					"text" : "$HOME/sigv/elements/nbcli/"
 				}
 
 			}
@@ -225,6 +224,12 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

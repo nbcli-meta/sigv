@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -219,8 +219,9 @@
 ,
 						"valueof" : 						{
 							"parameter_enum" : [ "", "wclose" ],
-							"parameter_longname" : "live.text[8]",
+							"parameter_longname" : "live.text[5]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -247,8 +248,9 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_longname" : "live.toggle[8]",
+							"parameter_longname" : "live.toggle[5]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.toggle",
 							"parameter_type" : 2
 						}
@@ -307,8 +309,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -784,8 +786,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1125,8 +1127,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 27.600000000000023, 516.0, 170.0, 23.0 ],
-					"text" : "jit.gl.model monde @name mdl"
+					"patching_rect" : [ 27.600000000000023, 516.0, 261.0, 23.0 ],
+					"text" : "jit.gl.model monde @name mdl @matrixoutput 0"
 				}
 
 			}
@@ -1607,23 +1609,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-35" : [ "live.text[8]", "live.text", 0 ],
-			"obj-37" : [ "live.toggle[8]", "live.toggle", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

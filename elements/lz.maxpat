@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -175,6 +175,7 @@
 							"parameter_enum" : [ "", "wclose" ],
 							"parameter_longname" : "live.text[18]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -203,6 +204,7 @@
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "live.toggle[18]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.toggle",
 							"parameter_type" : 2
 						}
@@ -273,8 +275,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -662,8 +664,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 27.899999999999977, 276.0, 79.0, 23.0 ],
-					"text" : "scale -2 2 0 1"
+					"patching_rect" : [ 27.899999999999977, 276.0, 90.0, 23.0 ],
+					"text" : "scale -2. 2. 0. 1."
 				}
 
 			}
@@ -809,8 +811,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1931,6 +1933,32 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-24" : [ "live.toggle[18]", "live.toggle", 0 ],
+			"obj-35" : [ "live.text[18]", "live.text", 0 ],
+			"obj-8::obj-50" : [ "live.text[19]", "live.text", 0 ],
+			"obj-8::obj-51" : [ "live.toggle[19]", "live.toggle", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "lorenz.maxpat",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

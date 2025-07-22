@@ -1,8 +1,0 @@
-#!/bin/bash
-
-for i in [ 0..$1 ]
-do
-  trans=$[ $RANDOM % 3000 + 750 ]
-  s geo ^ `rnr 1` $trans
-  sleep $2
-done

@@ -1,5 +1,0 @@
-#!/bin/bash
-
-nature mode group $1
-sleep $2
-

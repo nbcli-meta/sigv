@@ -1,3 +1,0 @@
-0, "/Users/magfoto/_studio/material/biomes/fleurs-jaunes.fbx";
-1, "/Users/magfoto/_studio/material/biomes/private-botaniq.fbx";
-2, "/Users/magfoto/_studio/material/biomes/outskirt-ravine.fbx";

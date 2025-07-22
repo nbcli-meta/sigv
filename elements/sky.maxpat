@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
+			"minor" : 6,
 			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1542.0, 520.0, 314.0, 302.0 ],
+		"rect" : [ 1161.0, 239.0, 314.0, 302.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -122,8 +122,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 40.0, 112.0, 229.0, 52.0 ],
-					"text" : "jit.gl.cubemap @file /Users/magfoto/_studio/material/panorama_cube_map2.png"
+					"patching_rect" : [ 40.0, 112.0, 273.0, 52.0 ],
+					"text" : "jit.gl.cubemap @file $HOME/_studio/material/panorama_cube_map2.png"
 				}
 
 			}
@@ -187,6 +187,8 @@
 
 			}
  ],
+		"dependency_cache" : [  ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

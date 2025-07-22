@@ -1,6 +1,0 @@
-#!/bin/bash
-
-for FN in *.sh
-     do
-         mv "${FN}" "${FN%.sh}"
-     done

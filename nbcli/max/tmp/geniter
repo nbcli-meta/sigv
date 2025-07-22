@@ -1,4 +1,0 @@
-gen 0 .1 1 .25 "rnr 1" | morph geo 205 2
-gen 0 .1 1 .25 "rnr 1" | morph geo 205 2
-iter 5 .25 "usb 1 $( rand2 54 64 ) 60 .25"
-

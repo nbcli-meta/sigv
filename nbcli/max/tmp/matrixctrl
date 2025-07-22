@@ -1,1 +1,0 @@
-x=$( rand2 0 7 ) ; y=$( rand2 0 3 ) ; z=$( rand2 0 2 ) ; s $( pattern "$x $y $z" )

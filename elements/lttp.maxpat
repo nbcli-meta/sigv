@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 990.0, 28.0, 788.0, 485.0 ],
+		"rect" : [ 100.0, 138.0, 788.0, 485.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -84,8 +84,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -186,6 +186,7 @@
 											"parameter_initial_enable" : 1,
 											"parameter_invisible" : 1,
 											"parameter_longname" : "flonum",
+											"parameter_modmode" : 0,
 											"parameter_shortname" : "flonum",
 											"parameter_type" : 3
 										}
@@ -693,47 +694,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 592.0, 44.226805567741394, 56.0, 23.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-29",
-					"linecount" : 3,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 592.0, 76.3768310546875, 161.0, 52.0 ],
-					"text" : "pict ~/_studio/material/default/lttp.png"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"autofit" : 1,
-					"forceaspect" : 1,
-					"id" : "obj-1",
-					"maxclass" : "fpic",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 592.0, 143.0, 100.0, 56.962025316455701 ],
-					"pic" : "lttp.png",
-					"presentation" : 1,
-					"presentation_rect" : [ 693.0, 16.392073946860588, 44.0, 25.063291139240508 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -763,30 +723,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 446.443300008773804, 218.0, 42.0, 23.0 ],
 					"text" : "s chan"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-16",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 3,
-					"outlettype" : [ "jit_matrix", "jit_matrix", "jit_matrix" ],
-					"patching_rect" : [ 516.443300008773804, 109.0, 54.0, 23.0 ],
-					"text" : "submatb"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "jit_matrix" ],
-					"patching_rect" : [ 516.443300008773804, 76.3768310546875, 53.0, 23.0 ],
-					"text" : "submata"
 				}
 
 			}
@@ -826,8 +762,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1258,8 +1194,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1341,8 +1277,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 6,
+											"minor" : 6,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1761,8 +1697,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 6,
+											"minor" : 6,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1850,8 +1786,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
-															"revision" : 6,
+															"minor" : 6,
+															"revision" : 5,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2777,8 +2713,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 6,
+											"minor" : 6,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3472,8 +3408,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 6,
+											"minor" : 6,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3694,6 +3630,7 @@
 , 											{
 												"box" : 												{
 													"chans" : 4,
+													"classic_curve" : 1,
 													"data" : [ 														{
 															"addpoints" : [ 0.0, 0.0, 0, 17.553191489361701, 0.871111268997192, 0, 39.787234042553195, 0.457777935663859, 0, 72.553191489361708, 0.417777935663859, 0, 88.936170212765958, 0.044444602330526, 0, 102.978723404255305, 0.124444602330526, 0, 220.000000000000256, 0.0, 0 ]
 														}
@@ -4205,8 +4142,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 6,
+											"minor" : 6,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4266,6 +4203,7 @@
 															"parameter_longname" : "live.gain~[1]",
 															"parameter_mmax" : 6.0,
 															"parameter_mmin" : -70.0,
+															"parameter_modmode" : 0,
 															"parameter_shortname" : "live.gain~[1]",
 															"parameter_type" : 0,
 															"parameter_unitstyle" : 4
@@ -6301,6 +6239,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "live.slider",
 							"parameter_mmax" : 1600.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.slider",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0
@@ -6459,6 +6398,7 @@
 							"parameter_longname" : "mc.live.gain~",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "mc.live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -6578,13 +6518,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-30", 0 ]
 				}
@@ -6662,13 +6595,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
-					"source" : [ "obj-36", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"source" : [ "obj-40", 0 ]
 				}
@@ -6719,6 +6645,34 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-22" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
+			"obj-25" : [ "live.slider", "live.slider", 0 ],
+			"obj-2::obj-19::obj-2" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
+			"obj-37::obj-40" : [ "live.text[3]", "live.text", 0 ],
+			"obj-37::obj-41" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-3::obj-24" : [ "flonum", "flonum", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "aio.maxpat",
+				"bootpath" : "~/sigv/elements",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
